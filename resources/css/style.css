@@ -9,7 +9,6 @@ Secondary Text: font-family: 'Roboto', sans-serif;
 
 */
 
-
 /* ------ Universal Styles ------ */
 
 html {
@@ -81,6 +80,8 @@ body h5 {
     margin: 0.6rem 0;
 }
 
+
+
 /* ------ HEADER ------ */
 
 header {
@@ -113,6 +114,7 @@ header li {
     padding-left: 3rem;
 }
 
+/* Anything under 1024px */
 @media only screen and (max-width: 1024px) {
     header .content {
         display: block;
@@ -134,11 +136,15 @@ header li {
     header li {
         padding-left: 1rem;
     }
-
 }
 
+/* Anything under 550px */
 @media only screen and (max-width: 550px) {
 
+    header {
+        position: relative;
+    }
+    
     header nav ul {
         display: flex;
         flex-direction: column;
@@ -165,6 +171,15 @@ a.anchor {
     position: relative;
     top: -6rem;
     visibility: hidden;
+}
+
+@media only screen and (max-width: 550px) {
+
+    .main {
+        position: relative;
+        top: 0;
+    }
+
 }
 
 /* ------ HERO ------ */
@@ -246,8 +261,47 @@ figure {
 .about figcaption em {
     font-size: 1.5rem;
     font-style: oblique;
-    padding: 1rem;
 }
+
+/* Anything under 700px */
+@media screen and (max-width: 700px) {
+    .about {
+        display: block;
+        background-color: white;
+        margin-bottom: 0;
+    }
+    
+    .about .content {
+        width: 100%;
+        height: auto;
+    }
+    
+    .about .text-container {
+        padding-left: 0%;
+        width: 100%;
+    }
+    
+    .about .text-container p {
+        font-size: 1.5rem;
+        padding: 2rem;
+    }
+    
+    .about figure {
+        display: flex;
+        left: 0%;
+        width: 100%;
+    }
+    
+    .profilpic {
+        width: 25%;
+        margin: 0.5rem;
+    }
+    
+    .about figcaption {
+        margin: auto;
+    }  
+}
+
 
 /* ------ SERVICES ------ */
 
@@ -326,6 +380,19 @@ figure {
     }
 }
 
+/* Anything under 700px */
+@media screen and (max-width: 700px) {
+    
+    .services {
+        margin-bottom: 0;
+    }
+    
+    .services .grid {
+        --num-cols: 1;
+    }
+}
+
+
 /*  PORTFOLIO */
 
 .portfolio {
@@ -384,6 +451,30 @@ figure {
     align-self: center;
 }
 
+/* Anything under 700px */
+@media only screen and (max-width: 700px) {
+
+    .portfolio {
+        margin-bottom: 0;
+    }
+
+    .portfolio .catalog {
+        padding: 0;
+    }
+    
+    .portfolio .project {
+        width: 25rem;
+    }
+
+    .portfolio .description {
+        width: 100%;
+    }    
+    
+    .portfolio .project img  {
+        display: none;
+    }
+}
+
 /* ------ TESTIMONIES ------ */
 
 .testimonies {
@@ -419,6 +510,18 @@ figure {
     font-style: oblique;
 }
 
+/* Anything under 700px */
+@media only screen and (max-width: 700px) {
+    
+    .testimonies {
+        margin-bottom: 0;
+    }
+   
+    .testimonies .content {
+        width: 90%;
+    }
+}
+
 /* ------ CONTACT ------ */
 
 .contact {
@@ -430,6 +533,7 @@ figure {
     font-size: 1.5em;
     font-style: oblique;
     line-height: 2rem;
+    padding: 0 1rem;
 }
 
 .contact .options {
