@@ -1,6 +1,7 @@
 # Choquel Marketing
 
-This is the website for Choquel Marketing, a Digital Marketing Company based in France. 
+This is the website for Choquel Marketing, a Digital Marketing Company based in France.
+Website: https://choquel-marketing.com/
 
 ## Description
 
