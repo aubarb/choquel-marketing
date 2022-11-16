@@ -3,8 +3,18 @@
 
 /* 
 
-Main Text: font-family: 'Nunito Sans', sans-serif;
-Titles: font-family: 'Poppins', sans-serif;
+Main Text: 
+font-family: 'Open Sans', sans-serif;
+font-weight: 400;
+
+Light Text: 
+font-family: 'Open Sans', sans-serif;
+font-weight: 300;
+
+Titles: 
+font-family: 'Raleway', sans-serif;
+
+
 
 */
 
@@ -17,7 +27,6 @@ html {
 body {
     position: relative;
     min-height: 100%;
-    font-family: 'Nunito Sans', sans-serif;
 }
 
 .center {
@@ -46,14 +55,37 @@ a:hover, button:hover{
     max-width: 100%;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}  
+
+::-webkit-scrollbar-track {
+    background: #F4ECE6;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #E6DACE;
+}
+
+body p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+body em {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #111111;
+}
+
 body h1 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 3rem;
     padding: 1rem;
 }
 
 body h2 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 4rem;
     font-weight: 800;
     padding: 1.5rem;
@@ -61,17 +93,17 @@ body h2 {
 }
 
 body h3 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
-    color: #595956;
+    color: #000000;
     text-align: center;
     padding: 1rem;
 }
 
 body h4 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 1.3em;
     color: rgb(0, 0, 0);
     font-weight: 900;
@@ -79,10 +111,43 @@ body h4 {
 }
 
 body h5 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 1em;
     text-decoration: underline;
     margin: 0.6rem 0;
+}
+
+body li {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+/* Anything under 1024px */
+@media only screen and (max-width: 1024px) {
+    body h1 {
+        font-size: 2rem;
+    }
+    
+    body h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        padding: 1rem;
+
+    }
+    
+    body h3 {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+    
+    body h4 {
+        font-size: 1.2em;
+        font-weight: 800;
+    }
+    
+    body h5 {
+        font-size: 1em;
+    }
 }
 
 /* ------ HEADER ------ */
@@ -165,8 +230,6 @@ header ul img {
 
 }
 
-
-
 /* ------ MAIN ------ */
 
 .main {
@@ -211,8 +274,14 @@ a.anchor {
 
 .hero .content p {
     font-size: 2rem;
-    font-style: italic;
     padding: 1rem;
+}
+
+/* Anything under 1024px */
+@media only screen and (max-width: 1024px) {
+    .hero .content p {
+        font-size: 1.5rem;
+    }
 }
 
 /* ------ ABOUT US ------ */
@@ -222,7 +291,7 @@ a.anchor {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: #FFE6EE;
+    background-color: #E6DACE;
     margin-bottom: 3rem;
 }
 
@@ -239,9 +308,23 @@ a.anchor {
     width: 80%;
 }
 
-.about .text-container p {
-    font-size: 1.5rem;
+.about h2 {
+    text-align: left;
     padding: 2rem;
+}
+
+.about .text-container p {
+    font-size: 1.2rem;
+    padding-left: 2rem;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.about .text-container .headline {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-left: 2rem;
+    line-height: 1.6rem;
 }
 
 figure {
@@ -250,20 +333,27 @@ figure {
     width: 25%;
     height: auto;
     text-align: center;
-    background-color: #DEC8DE;
-    box-shadow: -1px 1px 15px #A897A8;
+    background-color: #F4ECE6;
+    box-shadow: -1px 1px 15px #ABA198;
 }
 
 .profilpic {
     width: 80%;
     height: auto;
     margin: 5%;
+    margin-bottom: 0;
     border-radius: 50%;
     border: 0;
 }
 
 .about figcaption {
-    margin: 5%;
+    margin-bottom: 5%;
+}
+
+.about figcaption h3 {
+    text-transform: capitalize;
+    font-size: 1.7rem;
+    color: black;
 }
 
 .about figcaption em {
@@ -287,10 +377,18 @@ figure {
         padding-left: 0%;
         width: 100%;
     }
+
+    .about .text-container .headline {
+        font-size: 1.2rem;
+        text-align: justify;
+        margin-bottom: 0;
+        padding: 1rem;
+    }
     
     .about .text-container p {
-        font-size: 1.5rem;
-        padding: 2rem;
+        font-size: 1.1rem;
+        padding: 1rem;
+        text-align: justify;
     }
     
     .about figure {
@@ -306,7 +404,15 @@ figure {
     
     .about figcaption {
         margin: auto;
-    }  
+    }
+
+    .about figcaption h3 {
+        font-size: 1.4rem;
+    }
+    
+    .about figcaption em {
+        font-size: 1.2rem;
+    }
 }
 
 
@@ -348,10 +454,12 @@ figure {
     color: white;
     margin-top: 4rem;
     background-color: rgba(0, 0, 0,  0.75) ;
+    text-transform: capitalize;
+    font-size: 1.5rem;
 }
 
 .services p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-align: center;
     padding: 1rem;
     color: white;
@@ -396,6 +504,17 @@ figure {
     
     .services .grid {
         --num-cols: 1;
+        --row-height: 8rem;
+    }
+
+    .box h3 {
+        margin-top: 0;
+        font-size: 1.1rem;
+    }
+    
+    .services p {
+        font-size: 1rem;
+        padding: 0.5rem;
     }
 }
 
@@ -411,14 +530,17 @@ figure {
     display: flex;
     overflow-x: auto; /* To make it horizontally scrollable, by defaut it is none */
     padding: 0 2rem;
+    
 }
 
+/*
 .portfolio .catalog::-webkit-scrollbar {
     display: none;
 }
+*/
 
 .portfolio .project {
-    width: 53rem;
+    width: 30rem;
     height: 33rem;
     margin: 1rem;
     flex-shrink: 0;
@@ -435,21 +557,19 @@ figure {
 .portfolio .c7 {border: 3px solid #B8CDE1;}
 
 .portfolio .description {
-    width: 50%;
     height: auto;
     padding: 1em;
     display: flex;
     flex-direction: column;
 }
 
-.portfolio .description em {
+.portfolio .description h4 {
     font-size: 1.2em;
-    color: grey;
-    margin: 1rem 0;
 }
 
-.portfolio .project img {
-    width: 50%;
+.portfolio .description em {
+    font-size: 1em;
+    margin: 1rem 0;
 }
 
 .portfolio .button {
@@ -470,14 +590,6 @@ figure {
     
     .portfolio .project {
         width: 25rem;
-    }
-
-    .portfolio .description {
-        width: 100%;
-    }    
-    
-    .portfolio .project img  {
-        display: none;
     }
 }
 
@@ -512,7 +624,7 @@ figure {
 }
 
 .testimonies em {
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 /* Anything under 700px */
@@ -525,6 +637,11 @@ figure {
     .testimonies .content {
         width: 90%;
     }
+
+    .testimonies em {
+        margin: 1rem auto;
+        font-size: 1rem;
+    }
 }
 
 /* ------ CONTACT ------ */
@@ -536,7 +653,6 @@ figure {
 
 .contact p {
     font-size: 1.5em;
-    font-style: oblique;
     line-height: 2rem;
     padding: 0 1rem;
 }
@@ -550,4 +666,23 @@ figure {
 .contact .options img {
     width: 6rem;
     padding: 2rem;
+}
+
+/* Anything under 700px */
+@media only screen and (max-width: 700px) {
+    
+    .contact {
+        height: auto;
+        padding-bottom: 2rem;
+    }
+
+    .contact p {
+        font-size: 1.2em;
+        line-height: 1.5rem;
+    }
+    
+    .contact .options img {
+        width: 3rem;
+        padding: 1rem;
+    }
 }
