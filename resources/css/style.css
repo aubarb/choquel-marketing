@@ -280,9 +280,10 @@ figure {
 /* Anything under 700px */
 @media screen and (max-width: 700px) {
   .about {
-    height: 88vh;
+    height: fit-content;
     display: block;
     background-color: white;
+    margin-bottom: 12.5rem;
   }
 
   .about .content {
@@ -305,10 +306,12 @@ figure {
   .about .text-container p {
     font-size: 1.1rem;
     padding: 1rem;
+    padding-bottom: 0;
     text-align: justify;
   }
 
   .about figure {
+    height: 11rem;
     padding: 1rem;
     display: flex;
     flex-direction: column;
