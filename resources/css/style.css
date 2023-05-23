@@ -1,688 +1,468 @@
-
-/* ------ Fonts  ------ */
-
-/* 
-
-Main Text: 
-font-family: 'Open Sans', sans-serif;
-font-weight: 400;
-
-Light Text: 
-font-family: 'Open Sans', sans-serif;
-font-weight: 300;
-
-Titles: 
-font-family: 'Raleway', sans-serif;
-
-
-
-*/
-
 /* ------ Universal Styles ------ */
 
+:root {
+  --dark-color: #a68e76;
+  --medium-color: #e8c3a5;
+  --light-color: #fff2ea;
+  --button-color: #d1b394;
+  --highlight-color: #f09ca7;
+  --main-text-color: #3d3d3d;
+  --title-font: "Railway", sans-serif;
+  --text-font: "Open Sans", sans-serif;
+  --light-font: "Alexandria", sans-serif;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
 html {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 body {
-    position: relative;
-    min-height: 100%;
+  position: relative;
+  min-height: 100%;
+  font-family: var(--text-font);
 }
 
-.center {
-    text-align: center;
+.button {
+  border: 2px solid var(--button-color);
+  color: var(--button-color);
+  background-color: white;
+  padding: 0.75rem 1.5rem;
+  margin: 0 1rem;
+  font-size: 1rem;
 }
 
-button {
-    border: 2px solid #8A827C;
-    color: #8A827C;
-    background-color: white;
-    padding: .75rem 1.5rem;
-    margin: 0 1rem;
-    font-size: 1rem;
-}
-
-a:hover, button:hover{
-    cursor: pointer;
-}
-
-.image-container {
-    overflow: hidden;
-}
-
-.image-container img {
-    display: block;
-    max-width: 100%;
+.button:hover {
+  cursor: pointer;
+  background-color: var(--button-color);
+  color: var(--light-color);
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
-}  
+  width: 10px;
+}
 
 ::-webkit-scrollbar-track {
-    background: #F4ECE6;
+  background: var(--medium-color);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #E6DACE;
+  background: var(--light-color);
 }
 
 body p {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
+  font-family: var(--text-font);
+  font-weight: 400;
 }
 
 body em {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    color: #111111;
+  font-family: var(--light-font);
+  font-weight: 300;
 }
 
 body h1 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 3rem;
-    padding: 1rem;
+  font-family: var(--title-font);
+  font-size: 3rem;
+  padding: 1rem;
+  color: var(--main-text-color);
 }
 
 body h2 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 4rem;
-    font-weight: 800;
-    padding: 1.5rem;
-    text-align: center;
+  font-family: var(--title-font);
+  font-size: 4rem;
+  padding: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--main-text-color);
 }
 
 body h3 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #000000;
-    text-align: center;
-    padding: 1rem;
+  font-family: var(--title-font);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1rem;
+  color: var(--main-text-color);
 }
 
 body h4 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.3em;
-    color: rgb(0, 0, 0);
-    font-weight: 900;
-    margin: 1rem 0;
+  font-family: var(--text-font);
+  font-size: 1.3em;
+  margin: 1rem 0;
 }
 
 body h5 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1em;
-    text-decoration: underline;
-    margin: 0.6rem 0;
+  font-family: var(--text-font);
+  font-size: 1em;
+  text-decoration: underline;
+  margin: 0.6rem 0;
 }
 
 body li {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
+  font-family: var(--text-font);
+  font-weight: 300;
 }
 
 /* Anything under 1024px */
 @media only screen and (max-width: 1024px) {
-    body h1 {
-        font-size: 2rem;
-    }
-    
-    body h2 {
-        font-size: 2rem;
-        font-weight: 700;
-        padding: 1rem;
+  body h1 {
+    font-size: 2rem;
+  }
 
-    }
-    
-    body h3 {
-        font-size: 1.3rem;
-        font-weight: 600;
-    }
-    
-    body h4 {
-        font-size: 1.2em;
-        font-weight: 800;
-    }
-    
-    body h5 {
-        font-size: 1em;
-    }
-}
-
-/* ------ HEADER ------ */
-
-header {
-    position: fixed;
-    z-index: 100;
-    width: 100%;
-    border-bottom: solid 1px #c6c1c1;
-    background-color: white;
-}
-
-header .content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  body h2 {
+    font-size: 2rem;
+    font-weight: 700;
     padding: 1rem;
+  }
+
+  body h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+
+  body h4 {
+    font-size: 1.2em;
+    font-weight: 800;
+  }
+
+  body h5 {
+    font-size: 1em;
+  }
 }
 
-header img {
-    height: 4rem;
+/* ------ NAVBAR ------ */
+
+.navbar .logo {
+  height: 3.5rem;
 }
-
-header nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 2rem;
+.navbar .language {
+  width: 30px;
+  height: auto;
 }
-
-header li {
-    padding-left: 3rem;
+.navbar .nav-link {
+  font-size: 1.1rem;
+  font-weight: 600;
 }
-
-header ul img {
-    width: 30px;
-    height: auto;
+.navbar .nav-link:hover {
+  color: #f2d1c4;
 }
-
-/* Anything under 1024px */
-@media only screen and (max-width: 1024px) {
-    header .content {
-        display: block;
-    }
-
-    header .logo {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 1rem;
-    }
-
-    header nav ul {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin-right: 1rem;
-    }    
-
-    header li {
-        padding-left: 1rem;
-    }
-}
-
-/* Anything under 600px */
-@media only screen and (max-width: 600px) {
-
-    header {
-        position: relative;
-    }
-    
-    header nav ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }    
-
-    header li {
-        margin: 0.5rem auto;
-    }
-
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-img:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 /* ------ MAIN ------ */
 
-.main {
-    position: relative;
-    top: 6rem;
-}
-
 a.anchor {
-    display: block;
-    position: relative;
-    top: -6rem;
-    visibility: hidden;
-}
-
-@media only screen and (max-width: 600px) {
-
-    .main {
-        position: relative;
-        top: 0;
-    }
-
+  display: block;
+  position: relative;
+  top: -5.1rem;
+  visibility: hidden;
 }
 
 /* ------ HERO ------ */
 
 .hero {
-    height: 43.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('../img/HeroBanner.jpg');
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/HeroBanner.jpg");
+  background-size: cover;
 }
 
 .hero .content {
-    width: 100%;
-    background-color: white;
-    opacity: 80%;
+  width: 100%;
+  background-color: var(--light-color);
+  opacity: 80%;
 }
 
 .hero .content p {
-    font-size: 2rem;
-    padding: 1rem;
+  font-size: 2rem;
+  padding: 1rem;
 }
 
 /* Anything under 1024px */
 @media only screen and (max-width: 1024px) {
-    .hero .content p {
-        font-size: 1.5rem;
-    }
+  .hero .content p {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .hero {
+    height: 50vh;
+  }
 }
 
 /* ------ ABOUT US ------ */
 
 .about {
-    height: 43.5rem;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: #E6DACE;
-    margin-bottom: 3rem;
+  height: 90vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: var(--medium-color);
+  margin-bottom: 3rem;
 }
 
 .about .content {
-    display: flex;
-    align-items: center;
-    width: 60%;
-    height: 100%;
-    background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+  background-color: #ffffff;
 }
 
 .about .text-container {
-    padding-left: 8%;
-    width: 80%;
+  padding-left: 8%;
+  width: 80%;
 }
 
 .about h2 {
-    text-align: left;
-    padding: 2rem;
+  text-align: left;
+  padding-left: 2rem;
 }
 
 .about .text-container p {
-    font-size: 1.2rem;
-    padding-left: 2rem;
-    line-height: 1.5rem;
-    margin-bottom: 2rem;
+  color: var(--main-text-color);
+  font-size: 1.2rem;
+  padding-left: 2rem;
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .about .text-container .headline {
-    font-size: 1.5rem;
-    font-weight: 600;
-    padding-left: 2rem;
-    line-height: 1.6rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-left: 2rem;
+  line-height: 1.6rem;
 }
 
 figure {
-    position: absolute;
-    left: 20%;
-    width: 25%;
-    height: auto;
-    text-align: center;
-    background-color: #F4ECE6;
-    box-shadow: -1px 1px 15px #ABA198;
+  position: absolute;
+  left: 20%;
+  width: 25%;
+  height: auto;
+  text-align: center;
+  background-color: var(--light-color);
+  box-shadow: -1px 1px 15px #aba198;
 }
 
 .profilpic {
-    width: 80%;
-    height: auto;
-    margin: 5%;
-    margin-bottom: 0;
-    border-radius: 50%;
-    border: 0;
+  width: 80%;
+  height: auto;
+  margin: 5%;
+  margin-bottom: 0;
+  border-radius: 50%;
+  border: 0;
 }
 
 .about figcaption {
-    margin-bottom: 5%;
+  margin-bottom: 5%;
 }
 
 .about figcaption h3 {
-    text-transform: capitalize;
-    font-size: 1.7rem;
-    color: black;
+  text-transform: capitalize;
+  font-size: 1.7rem;
+  margin-bottom: 0;
+  padding-bottom: 0.2rem;
 }
 
 .about figcaption em {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 /* Anything under 700px */
 @media screen and (max-width: 700px) {
-    .about {
-        display: block;
-        background-color: white;
-        margin-bottom: 0;
-    }
-    
-    .about .content {
-        width: 100%;
-        height: auto;
-    }
-    
-    .about .text-container {
-        padding-left: 0%;
-        width: 100%;
-    }
+  .about {
+    height: 88vh;
+    display: block;
+    background-color: white;
+  }
 
-    .about .text-container .headline {
-        font-size: 1.2rem;
-        text-align: justify;
-        margin-bottom: 0;
-        padding: 1rem;
-    }
-    
-    .about .text-container p {
-        font-size: 1.1rem;
-        padding: 1rem;
-        text-align: justify;
-    }
-    
-    .about figure {
-        display: flex;
-        left: 0%;
-        width: 100%;
-    }
-    
-    .profilpic {
-        width: 25%;
-        margin: 0.5rem;
-    }
-    
-    .about figcaption {
-        margin: auto;
-    }
+  .about .content {
+    width: 100%;
+    height: auto;
+  }
 
-    .about figcaption h3 {
-        font-size: 1.4rem;
-    }
-    
-    .about figcaption em {
-        font-size: 1.2rem;
-    }
+  .about .text-container {
+    padding-left: 0%;
+    width: 100%;
+  }
+
+  .about .text-container .headline {
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-bottom: 0;
+    padding: 1rem;
+  }
+
+  .about .text-container p {
+    font-size: 1.1rem;
+    padding: 1rem;
+    text-align: justify;
+  }
+
+  .about figure {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    left: 0;
+    margin: auto;
+  }
+
+  .profilpic {
+    width: 25%;
+    margin: auto 0.5rem;
+  }
+
+  .about figcaption {
+    margin: auto;
+  }
+
+  .about figcaption h3 {
+    font-size: 1.4rem;
+    padding: 0.4rem;
+  }
+
+  .about figcaption em {
+    font-size: 1.2rem;
+  }
 }
-
 
 /* ------ SERVICES ------ */
 
-.services {
-    margin-bottom: 3rem;
+.services .container {
+  transform-style: preserve-3d;
 }
 
-.services .grid {
-    --gap: 1rem; /*Declaring a variable called gap and giving a value to reuse later on */
-    --num-cols: 3; /*Declaring a variable */
-    --row-height: 20rem; /*Declaring a variable */
-
-    box-sizing: border-box; /* This insure the padding won't increase the size of the total container */
-    padding: var(--gap);
-
-    display: grid;
-    grid-template-columns: repeat(var(--num-cols), 1fr);
-    grid-auto-rows: var(--row-height); /* we want an unlimited number of ?px rows to make the grid */
-    gap: var(--gap);
+.services .container .box {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  cursor: pointer;
 }
 
-.services img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* images will maintain their aspect ratio */
+.services .container .box .flipCard {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: 0.9s ease;
 }
 
-.box {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    color: white;
+.services .container .box .flipCard .imgContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
 }
 
-.box h3 {
-    color: white;
-    margin-top: 4rem;
-    background-color: rgba(0, 0, 0,  0.75) ;
-    text-transform: capitalize;
-    font-size: 1.5rem;
+.services .container .box .flipCard .imgContainer img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
-.services p {
-    font-size: 1.3rem;
-    text-align: center;
-    padding: 1rem;
-    color: white;
-    background-color: rgba(0, 0, 0,  0.75) ;
-    opacity: 0;
+.services .container .box .flipCard .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--light-color);
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transform: rotateY(180deg);
 }
 
-.services .box:hover p {
-    text-align: center;
-    opacity: 1;
-    transition: 500ms;
+.services .container .box:hover .flipCard {
+  transform: rotateY(180deg);
 }
 
-.box-1 {background-image: url('../img/Digital Marketing Strategy.jpeg');}
-.box-2 {background-image: url('../img/Social Media Management.jpeg');}
-.box-3 {background-image: url('../img/Website Recommendations.jpeg');}
-.box-4 {background-image: url('../img/Branding Startegy Market Research.jpeg');}
-.box-5 {background-image: url('../img/Content Marketing.jpeg');}
-.box-6 {background-image: url('../img/Email Marketing.jpeg');}
-.box-7 {background-image: url('../img/Digital Advertising.jpeg');}
-.box-8 {background-image: url('../img/Copywriting.jpeg');}
-.box-9 {background-image: url('../img/Special Request.jpeg');}
-
-/* Anything under 1024px */
-@media screen and (max-width: 1024px) {
-    .services .grid {
-        --num-cols: 2;
-        --row-height: 15rem;
-    }
-
-    .box h3 {
-        margin-top: 2rem;
-    }
+.services .container .box .flipCard .content div {
+  transform-style: preserve-3d;
+  padding: 20px;
+  background: var(--dark-color);
+  transform: translateZ(100px);
 }
 
-/* Anything under 700px */
-@media screen and (max-width: 700px) {
-    
-    .services {
-        margin-bottom: 0;
-    }
-    
-    .services .grid {
-        --num-cols: 1;
-        --row-height: 8rem;
-    }
-
-    .box h3 {
-        margin-top: 0;
-        font-size: 1.1rem;
-    }
-    
-    .services p {
-        font-size: 1rem;
-        padding: 0.5rem;
-    }
+.services .container .box .flipCard .content div h3 {
+  letter-spacing: 1px;
 }
-
 
 /*  PORTFOLIO */
 
-.portfolio {
-    height: 43.5rem;
-    margin-bottom: 3rem;
+/* When hovering the card, hide image and display text and button */
+
+.portfolio .card-img {
+  opacity: 1;
+  transition: all 750ms;
 }
-
-.portfolio .catalog {
-    display: flex;
-    overflow-x: auto; /* To make it horizontally scrollable, by defaut it is none */
-    padding: 0 2rem;
-    
+.portfolio .card:hover .card-img {
+  opacity: 0;
 }
-
-/*
-.portfolio .catalog::-webkit-scrollbar {
-    display: none;
+.portfolio .card-title {
+  opacity: 0;
+  transform: translateY(-150%);
+  transition: all 750ms;
 }
-*/
-
-.portfolio .project {
-    width: 30rem;
-    height: 33rem;
-    margin: 1rem;
-    flex-shrink: 0;
-    display: flex;
+.portfolio .cardButton {
+  opacity: 0;
+  transform: translateY(+200%);
+  transition: all 750ms;
 }
-
-/* borders color to fit image color */
-.portfolio .c1 {border: 3px solid #caa9d9;}
-.portfolio .c2 {border: 3px solid #c7ba98;}
-.portfolio .c3 {border: 3px solid #D3DEE3;}
-.portfolio .c4 {border: 3px solid #F4E8E1;}
-.portfolio .c5 {border: 3px solid #04A54E;}
-.portfolio .c6 {border: 3px solid #FFE5E4;}
-.portfolio .c7 {border: 3px solid #B8CDE1;}
-
-.portfolio .description {
-    height: auto;
-    padding: 1em;
-    display: flex;
-    flex-direction: column;
-}
-
-.portfolio .description h4 {
-    font-size: 1.2em;
-}
-
-.portfolio .description em {
-    font-size: 1em;
-    margin: 1rem 0;
-}
-
-.portfolio .button {
-    margin-top: auto;
-    align-self: center;
-}
-
-/* Anything under 700px */
-@media only screen and (max-width: 700px) {
-
-    .portfolio {
-        margin-bottom: 0;
-    }
-
-    .portfolio .catalog {
-        padding: 0;
-    }
-    
-    .portfolio .project {
-        width: 25rem;
-    }
+.portfolio .card:hover .card-title,
+.portfolio .card:hover .cardButton {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* ------ TESTIMONIES ------ */
 
-.testimonies {
-    height: 43.5rem;
-    margin-bottom: 3rem;
-}
-
-.testimonies .content {
-    overflow-y: scroll;
-    margin: auto;
-    width: 70%;
-    max-height: 80%;
-    border-top: 2px solid rgb(143, 143, 143);
-    border-bottom: 2px solid rgb(143, 143, 143);
-}
-
-.testimonies .content::-webkit-scrollbar {
-    display: none;
-}
-
 .testimonies .text-box {
-    margin: 4rem auto;
-    text-align: center;
-    width: 80%;
+  margin: 2rem auto;
+  width: 70%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.testimonies h3 {
-    padding: 0;
+.testimonies p {
+  text-align: justify;
 }
 
-.testimonies em {
-    font-size: 1.1em;
-}
-
-/* Anything under 700px */
 @media only screen and (max-width: 700px) {
-    
-    .testimonies {
-        margin-bottom: 0;
-    }
-   
-    .testimonies .content {
-        width: 90%;
-    }
-
-    .testimonies em {
-        margin: 1rem auto;
-        font-size: 1rem;
-    }
+  .testimonies .text-box {
+    width: 80%;
+    height: 50vh;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .testimonies .text-box {
+    width: 80%;
+    height: 70vh;
+  }
 }
 
 /* ------ CONTACT ------ */
-
-.contact {
-    height: 43.5rem;
-    text-align: center;
-}
-
-.contact p {
-    font-size: 1.5em;
-    line-height: 2rem;
-    padding: 0 1rem;
-}
-
-.contact .options {
-    display: flex;
-    margin: 2rem;
-    justify-content: center;
-}
-
-.contact .options img {
-    width: 6rem;
-    padding: 2rem;
-}
-
-/* Anything under 700px */
-@media only screen and (max-width: 700px) {
-    
-    .contact {
-        height: auto;
-        padding-bottom: 2rem;
-    }
-
-    .contact p {
-        font-size: 1.2em;
-        line-height: 1.5rem;
-    }
-    
-    .contact .options img {
-        width: 3rem;
-        padding: 1rem;
-    }
-}

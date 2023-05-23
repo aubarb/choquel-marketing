@@ -1,0 +1,66 @@
+[  
+    {    
+        "title": "Email Marketing",    
+        "client": "Fastcontact",    
+        "description": "Fastcontact is an Email marketing company specialized in E-commerce ",
+        "project": "Implement, send, measure and improve the email marketing strategy and the automatic email flows for several brands of E-commerce.",
+        "results": [     
+            "+5% opening rate",      
+            "+3% click rate",      
+            "+30% Purchases on websites"
+        ],
+        "button-text": "Newsletter",
+        "link": "resources/img/Newsletter PDF.pdf"
+    },
+    {    
+        "title": "Digital Marketing Strategy",    
+        "client": "Bodia Cambodian Apothecary & Spa",    
+        "description": "Bodia is a Cambodian Network of Spas and has created its own line of natural cosmetics made in Cambodia.",
+        "project": "Develop Bodia's global brand identity via several channels including website redesign, social media management, newsletter creation and more.",
+        "results": [     
+            "Global +60% followers",      
+            "+50% websites visits",      
+            "+45% global sales",      
+            "+20% opening rate for the newsletter"    
+        ],
+        "button-text": "Newsletter",
+        "link": "resources/img/NewsletterBodiaEN.pdf"
+    },
+    {
+        "title": "Rebranding",
+        "client": "Kampuchea Tela",
+        "description": "Kampuchea Tela is one of Cambodia's largest companies, with gas stations throughout the country.",
+        "project": "Redesign Tela’s global brand image online & offline; create a new corporate identity and dynamize social media.",
+        "results": [
+            "+25% followers & engagements",
+            "Ratings of Tela stations improved",
+            "Tela is recognized as a petroleum leader"
+        ],
+        "button-text": "See More",
+        "link": "https://www.mangotango.asia/case-study/tela-design-refresh/"
+    },
+    {
+        "title": "Social Media",
+        "client": "Mango Tango",
+        "description": "Mango Tango Asia is one of the most important advertising and creative communication agencies on the Cambodian landscape.",
+        "project": "Animate social media pages of the agency and communicate about its work, its team, values, work, societal cases studies and technical and competitive benchmarks.",
+        "results": [
+            "+25% followers & awareness",
+            "Publication of several market studies about local customers habits & landscape"
+        ],
+        "button-text": "Video",
+        "link": "https://www.facebook.com/watch/?v=632209480900355"
+    },
+    {
+        "title": "Global Marketing Strategy",
+        "client": "Camboticket.com",
+        "description": "Camboticket.com is the first Cambodian online platform to book buses, ferries, taxis and activities throughout Cambodia and neighboring countries.",
+        "project": "Redesign Camboticket.com website, manage marketing digital promotional calendar, create and improve the brand identity and brand guidelines, manage all social media pages of the brand and manage influencers & affiliates.",
+        "results": [
+            "+25% followers & awareness",
+            "Publication of several market studies about local customers habits & landscape"
+        ],
+        "button-text": "Website",
+        "link": "https://www.camboticket.com/"
+    }
+]
