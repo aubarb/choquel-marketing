@@ -44,11 +44,11 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--medium-color);
+  background: var(--light-color);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--light-color);
+  background: var(--medium-color);
 }
 
 body p {
@@ -469,3 +469,12 @@ figure {
 }
 
 /* ------ CONTACT ------ */
+.contact .row {
+  width: 60%;
+}
+
+@media only screen and (max-width: 700px) {
+  .contact .row {
+    width: 90%;
+  }
+}
