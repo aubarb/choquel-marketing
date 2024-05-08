@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "my-site",
+    "site": "choquel-marketing",
     "public": "/",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
