@@ -478,3 +478,13 @@ figure {
     width: 90%;
   }
 }
+
+/* ------ COPYRIGHT ------ */
+.copyright {
+    background-color: #b3b1b1; /* Grey ribbon background */
+    display: flex;
+    align-items: center;       /* Vertical centering */
+    justify-content: center;   /* Horizontal centering */
+    padding: 20px 0;           /* Optional: Adds vertical space */
+}
+
