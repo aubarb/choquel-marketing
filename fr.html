@@ -1,93 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Choquel Marketing" />
-    <meta
-      name="copyright"
-      content="Choquel Marketing 2022. All Rights Reserved."
-    />
+    <meta name="copyright" content="Choquel Marketing 2025. All Rights Reserved." />
     <meta name="website-name" content="Choquel Marketing" />
-    <meta
-      name="keywords"
-      content="Choquel Marketing, marketing, digital marketing, online marketing, email marketing, email campaign, social media, branding, copywriting, advertising, digital advertising, market research"
-    />
+    <meta name="keywords" content="Choquel Marketing, marketing, marketing digital, marketing en ligne, email marketing, campagne email, réseaux sociaux, branding, copywriting, publicité, publicité digitale, étude de marché" />
     <meta name="google" content="nositelinkssearchbox" />
     <meta name="google" content="notranslate" />
-    <meta name="robots" content="all" />
-    <meta
-      name="description"
-      content="Choquel Marketing is a Digital Marketing Company based in France, created by Camille Choquel. We are specialized in global digital marketing strategy & brand awareness."
-    />
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="Choquel Marketing est une société de marketing digital basée en France, créée par Camille Choquel. Nous sommes spécialisés dans la stratégie marketing globale et la notoriété de marque." />
     <meta name="title" content="Choquel Marketing" />
+
+    <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://choquel-marketing.com" />
+    <meta property="og:url" content="https://choquel-marketing.com/fr.html" />
     <meta property="og:title" content="Choquel Marketing" />
-    <meta
-      property="og:description"
-      content="Choquel Marketing is a Digital Marketing Company based in France, created by Camille Choquel. We are specialized in global digital marketing strategy & brand awareness."
-    />
-    <meta property="og:image" content="resources/img/social.png" />
+    <meta property="og:description" content="Choquel Marketing est une société de marketing digital basée en France, créée par Camille Choquel. Nous sommes spécialisés dans la stratégie marketing globale et la notoriété de marque." />
+    <meta property="og:image" content="https://choquel-marketing.com/resources/img/social.png" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+
+    <!-- Twitter Card -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://choquel-marketing.com" />
+    <meta property="twitter:url" content="https://choquel-marketing.com/fr.html" />
     <meta property="twitter:title" content="Choquel Marketing" />
-    <meta
-      property="twitter:description"
-      content="Choquel Marketing is a Digital Marketing Company based in France, created by Camille Choquel. We are specialized in global digital marketing strategy & brand awareness."
-    />
-    <meta property="twitter:image" content="resources/img/social.png" />
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="resources/img/favicon.ico"
-    />
+    <meta property="twitter:description" content="Choquel Marketing est une société de marketing digital basée en France, créée par Camille Choquel. Nous sommes spécialisés dans la stratégie marketing globale et la notoriété de marque." />
+    <meta property="twitter:image" content="https://choquel-marketing.com/resources/img/social.png" />
+
+    <!-- Language alternates -->
+    <link rel="alternate" hreflang="en" href="https://choquel-marketing.com/" />
+    <link rel="alternate" hreflang="fr" href="https://choquel-marketing.com/fr.html" />
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" type="image/x-icon" href="resources/img/favicon.ico" />
     <link rel="icon" type="image/x-icon" href="resources/img/favicon.ico" />
-    <link rel="icon" type="image/jpg" href="resources/img/favicon.png" />
+    <link rel="icon" type="image/png" href="resources/img/favicon.png" />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Raleway:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./resources/css/style.css" format="text/css" />
-    <link rel="stylesheet" href="./resources/css/reset.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-      crossorigin="anonymous"
-    />
-    <title>Choquel Marketing</title>
-  </head>
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-QXV2YY9CGF"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Raleway:wght@300&display=swap" rel="stylesheet" />
 
-    gtag("config", "G-QXV2YY9CGF");
-  </script>
+    <!-- Stylesheets: reset → custom → framework -->
+    <link rel="stylesheet" type="text/css" href="./resources/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./resources/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" crossorigin="anonymous" />
+
+    <title>Choquel Marketing</title>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QXV2YY9CGF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QXV2YY9CGF');
+    </script>
+  </head>
   <body>
+
     <!-- NAVBAR -->
-    <nav
-      class="navbar sticky-top navbar-expand-lg navbar-light navbar-1 bg-white"
-    >
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light navbar-1 bg-white">
       <a href="#top" class="navbar-brand">
-        <img
-          class="logo"
-          src="resources/img/Choquel Logo.webp"
-          alt="Choquel Marketing Logo"
-        />
+        <img class="logo" src="resources/img/Choquel Logo.webp" alt="Choquel Marketing Logo" />
       </a>
       <button
         class="navbar-toggler border-0 me-2"
@@ -96,33 +75,21 @@
         data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent"
         aria-expanded="false"
-        aria-label="Toggle navigation"
+        aria-label="Ouvrir la navigation"
       >
-        <img class="img-fluid h-auto" src="resources/img/Burger.png" />
+        <img class="img-fluid h-auto" src="resources/img/Burger.png" alt="Menu" />
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav m-auto d-flex justify-content-between w-100">
+          <li class="nav-item m-auto"><a class="nav-link" href="#about_section">À PROPOS</a></li>
+          <li class="nav-item m-auto"><a class="nav-link" href="#services_section">SERVICES</a></li>
+          <li class="nav-item m-auto"><a class="nav-link" href="#portfolio_section">PORTFOLIO</a></li>
+          <li class="nav-item m-auto"><a class="nav-link" href="#testimonies_section">TÉMOIGNAGES</a></li>
+          <li class="nav-item m-auto"><a class="nav-link" href="#contact_section">CONTACT</a></li>
           <li class="nav-item m-auto">
-            <a class="nav-link" href="#about_section">À PROPOS</a>
-          </li>
-          <li class="nav-item m-auto">
-            <a class="nav-link" href="#services_section">SERVICES</a>
-          </li>
-          <li class="nav-item m-auto">
-            <a class="nav-link" href="#portfolio_section">PORTFOLIO</a>
-          </li>
-          <li class="nav-item m-auto">
-            <a class="nav-link" href="#testimonies_section">TÉMOIGNAGES</a>
-          </li>
-          <li class="nav-item m-auto">
-            <a class="nav-link" href="#contact_section">CONTACT</a>
-          </li>
-          <li class="nav-item m-auto">
-            <a class="nav-link" href="index.html"
-              ><img
-                class="language"
-                src="https://img.icons8.com/color/48/000000/great-britain-circular.png"
-            /></a>
+            <a class="nav-link" href="index.html">
+              <img class="language" src="https://img.icons8.com/color/48/000000/great-britain-circular.png" alt="English version" />
+            </a>
           </li>
         </ul>
       </div>
@@ -130,7 +97,8 @@
 
     <!-- MAIN -->
     <div class="main">
-      <!-- HERO SECTION -->
+
+      <!-- HERO -->
       <a class="anchor" id="top"></a>
       <div class="hero">
         <div class="content text-center">
@@ -139,32 +107,25 @@
         </div>
       </div>
 
-      <!-- ABOUT US -->
+      <!-- À PROPOS -->
       <a class="anchor" id="about_section"></a>
       <div class="about">
         <div class="content">
           <div class="text-container">
             <h2>À propos</h2>
-            <p class="headline">
-              Société de Marketing Digital spécialisée dans la stratégie et la
-              notoriété de marque.
-            </p>
+            <p class="headline">Société de Marketing Digital spécialisée dans la stratégie et la notoriété de marque.</p>
             <p>
               Basés en France, nous travaillons avec nos clients depuis 2021.
-              Notre mission est d’aider les entreprises et les professionnels à
+              Notre mission est d'aider les entreprises et les professionnels à
               atteindre leurs objectifs marketing. En les accompagnant dans leur
               stratégie, en développant leur image et en renforçant leur
-              présence numérique, nous leur permettons d’atteindre leurs buts
+              présence numérique, nous leur permettons d'atteindre leurs buts
               efficacement.
             </p>
           </div>
         </div>
         <figure>
-          <img
-            class="profilpic"
-            src="resources/img/Profil Picture.jpeg"
-            alt="Profil picture"
-          />
+          <img class="profilpic" src="resources/img/Profil Picture.jpeg" alt="Camille Choquel, Spécialiste Marketing Digital" />
           <figcaption>
             <h3>Camille Choquel</h3>
             <em>Spécialiste Marketing Digital</em>
@@ -176,247 +137,130 @@
       <a class="anchor" id="services_section"></a>
       <div class="services">
         <h2>Services</h2>
-        <div
-          class="container d-flex align-items-center justify-content-center flex-wrap"
-        >
+        <div class="container d-flex align-items-center justify-content-center flex-wrap">
           <div class="box">
             <div class="flipCard">
               <div class="imgContainer">
-                <img src="./resources/img/services/FR/Bloc 1 FR.jpg" alt="" />
+                <img src="./resources/img/services/FR/Bloc 1 FR.jpg" alt="Stratégie Marketing Digital" />
               </div>
-              <div
-                class="content d-flex flex-column align-items-center justify-content-center"
-              >
-                <div>
-                  <p class="fs-6 text-white">
-                    Une stratégie complète de marketing digital qui englobe tous
-                    les aspects nécessaires pour augmenter votre visibilité et
-                    optimiser vos performances.
-                  </p>
-                </div>
+              <div class="content d-flex flex-column align-items-center justify-content-center">
+                <div><p class="fs-6 text-white">Une stratégie complète de marketing digital qui englobe tous les aspects nécessaires pour augmenter votre visibilité et optimiser vos performances.</p></div>
               </div>
             </div>
           </div>
           <div class="box">
             <div class="flipCard">
               <div class="imgContainer">
-                <img src="./resources/img/services/FR/Bloc 2 FR.jpg" alt="" />
+                <img src="./resources/img/services/FR/Bloc 2 FR.jpg" alt="Réseaux Sociaux" />
               </div>
-              <div
-                class="content d-flex flex-column align-items-center justify-content-center"
-              >
-                <div>
-                  <p class="fs-6 text-white">
-                    Du contenu engageant et de qualité sur vos réseaux sociaux
-                    afin d'améliorer votre visibilité et d'accroître
-                    l'engagement de vos prospects.
-                  </p>
-                </div>
+              <div class="content d-flex flex-column align-items-center justify-content-center">
+                <div><p class="fs-6 text-white">Du contenu engageant et de qualité sur vos réseaux sociaux afin d'améliorer votre visibilité et d'accroître l'engagement de vos prospects.</p></div>
               </div>
             </div>
           </div>
           <div class="box">
             <div class="flipCard">
               <div class="imgContainer">
-                <img src="./resources/img/services/FR/Bloc 3 FR.jpg" alt="" />
+                <img src="./resources/img/services/FR/Bloc 3 FR.jpg" alt="Refonte de Site Web" />
               </div>
-              <div
-                class="content d-flex flex-column align-items-center justify-content-center"
-              >
-                <div>
-                  <p class="fs-6 text-white">
-                    Des conseils pour repenser votre site internet et ainsi
-                    attirer plus de visites, générer davantage de trafic et
-                    optimiser l’expérience de vos visiteurs.
-                  </p>
-                </div>
+              <div class="content d-flex flex-column align-items-center justify-content-center">
+                <div><p class="fs-6 text-white">Des conseils pour repenser votre site internet et ainsi attirer plus de visites, générer davantage de trafic et optimiser l'expérience de vos visiteurs.</p></div>
               </div>
             </div>
           </div>
           <div class="box">
             <div class="flipCard">
               <div class="imgContainer">
-                <img src="./resources/img/services/FR/Bloc 4 FR.jpg" alt="" />
+                <img src="./resources/img/services/FR/Bloc 4 FR.jpg" alt="Branding" />
               </div>
-              <div
-                class="content d-flex flex-column align-items-center justify-content-center"
-              >
-                <div>
-                  <p class="fs-6 text-white">
-                    Redéfinir et redynamiser votre image de marque afin qu'elle
-                    soit en parfaite adéquation avec vos valeurs et qu'elle se
-                    démarque de la concurrence.
-                  </p>
-                </div>
+              <div class="content d-flex flex-column align-items-center justify-content-center">
+                <div><p class="fs-6 text-white">Redéfinir et redynamiser votre image de marque afin qu'elle soit en parfaite adéquation avec vos valeurs et qu'elle se démarque de la concurrence.</p></div>
               </div>
             </div>
           </div>
           <div class="box">
             <div class="flipCard">
               <div class="imgContainer">
-                <img src="./resources/img/services/FR/Bloc 5 FR.jpg" alt="" />
+                <img src="./resources/img/services/FR/Bloc 5 FR.jpg" alt="Création de Contenu" />
               </div>
-              <div
-                class="content d-flex flex-column align-items-center justify-content-center"
-              >
-                <div>
-                  <p class="fs-6 text-white">
-                    Un contenu de qualité adapté à vos besoins pour tous vos
-                    supports de communication en ligne et hors ligne.
-                  </p>
-                </div>
+              <div class="content d-flex flex-column align-items-center justify-content-center">
+                <div><p class="fs-6 text-white">Un contenu de qualité adapté à vos besoins pour tous vos supports de communication en ligne et hors ligne.</p></div>
               </div>
             </div>
           </div>
           <div class="box">
             <div class="flipCard">
               <div class="imgContainer">
-                <img src="./resources/img/services/FR/Bloc 6 FR.jpg" alt="" />
+                <img src="./resources/img/services/FR/Bloc 6 FR.jpg" alt="Email Marketing" />
               </div>
-              <div
-                class="content d-flex flex-column align-items-center justify-content-center"
-              >
-                <div>
-                  <p class="fs-6 text-white">
-                    Engagez vos clients et prospects en partageant votre contenu
-                    et votre actualité, vendez et fidélisez.
-                  </p>
-                </div>
+              <div class="content d-flex flex-column align-items-center justify-content-center">
+                <div><p class="fs-6 text-white">Engagez vos clients et prospects en partageant votre contenu et votre actualité, vendez et fidélisez.</p></div>
               </div>
             </div>
           </div>
           <div class="box">
             <div class="flipCard">
               <div class="imgContainer">
-                <img src="./resources/img/services/FR/Bloc 7 FR.jpg" alt="" />
+                <img src="./resources/img/services/FR/Bloc 7 FR.jpg" alt="Publicité Digitale" />
               </div>
-              <div
-                class="content d-flex flex-column align-items-center justify-content-center"
-              >
-                <div>
-                  <p class="fs-6 text-white">
-                    Développez votre visibilité en ligne et attirez de nouveaux
-                    potentiels prospects, communiquez sur votre marque et
-                    démarquez-vous.
-                  </p>
-                </div>
+              <div class="content d-flex flex-column align-items-center justify-content-center">
+                <div><p class="fs-6 text-white">Développez votre visibilité en ligne et attirez de nouveaux potentiels prospects, communiquez sur votre marque et démarquez-vous.</p></div>
               </div>
             </div>
           </div>
           <div class="box">
             <div class="flipCard">
               <div class="imgContainer">
-                <img src="./resources/img/services/FR/Bloc 8 FR.jpg" alt="" />
+                <img src="./resources/img/services/FR/Bloc 8 FR.jpg" alt="Copywriting & SEO" />
               </div>
-              <div
-                class="content d-flex flex-column align-items-center justify-content-center"
-              >
-                <div>
-                  <p class="fs-6 text-white">
-                    Un contenu textuel optimisé SEO pour le référencement de
-                    votre site internet, livres blancs, fiches produit et
-                    articles de blog.
-                  </p>
-                </div>
+              <div class="content d-flex flex-column align-items-center justify-content-center">
+                <div><p class="fs-6 text-white">Un contenu textuel optimisé SEO pour le référencement de votre site internet, livres blancs, fiches produit et articles de blog.</p></div>
               </div>
             </div>
           </div>
           <div class="box">
             <div class="flipCard">
               <div class="imgContainer">
-                <img src="./resources/img/services/FR/Bloc 9 FR.jpg" alt="" />
+                <img src="./resources/img/services/FR/Bloc 9 FR.jpg" alt="Stratégie Sur-Mesure" />
               </div>
-              <div
-                class="content d-flex flex-column align-items-center justify-content-center"
-              >
-                <div>
-                  <p class="fs-6 text-white">
-                    Nous offrons un service personnalisé pour les clients qui
-                    ont besoin d’une stratégie sur-mesure. Contactez-nous pour
-                    en savoir plus.
-                  </p>
-                </div>
+              <div class="content d-flex flex-column align-items-center justify-content-center">
+                <div><p class="fs-6 text-white">Nous offrons un service personnalisé pour les clients qui ont besoin d'une stratégie sur-mesure. Contactez-nous pour en savoir plus.</p></div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!--------- PORTFOLIO ----------->
+
+      <!-- PORTFOLIO -->
       <a class="anchor" id="portfolio_section"></a>
       <div class="portfolio mt-4">
         <h2>Portfolio</h2>
         <div class="container">
-          <!--------- CATS IN NEED ----------->
           <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 m-3">
+
+            <!-- CATS IN NEED -->
             <div class="col card text-black p-0 rounded-0 border-0">
-              <img
-                class="card-img rounded-0"
-                src="./resources/img/portfolio/CatsInNeed.jpg"
-                alt="Cats in Need Image"
-              />
-              <div
-                class="card-img-overlay rounded-0 d-flex flex-column justify-content-center align-items-center"
-              >
+              <img class="card-img rounded-0" src="./resources/img/portfolio/CatsInNeed.jpg" alt="Cats in Need" />
+              <div class="card-img-overlay rounded-0 d-flex flex-column justify-content-center align-items-center">
                 <div class="text rounded-0 text-center">
                   <h3 class="card-title m-3">Cats in Need</h3>
-                  <!-- Button trigger modal -->
-                  <button
-                    type="button"
-                    class="button cardButton"
-                    data-bs-toggle="modal"
-                    data-bs-target="#CatsInNeedModal"
-                  >
-                    Voir Plus
-                  </button>
-                  <!-- Modal -->
-                  <div
-                    class="modal fade"
-                    id="CatsInNeedModal"
-                    tabindex="-1"
-                    role="dialog"
-                    aria-labelledby="CatsInNeedModalTitle"
-                    aria-hidden="true"
-                  >
-                    <div
-                      class="modal-dialog modal-dialog-centered"
-                      role="document"
-                    >
+                  <button type="button" class="button cardButton" data-bs-toggle="modal" data-bs-target="#CatsInNeedModal">Voir Plus</button>
+                  <div class="modal fade" id="CatsInNeedModal" tabindex="-1" role="dialog" aria-labelledby="CatsInNeedModalTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
                       <div class="modal-content">
                         <div class="modal-header d-flex justify-content-center">
-                          <h3 class="modal-title" id="CatsInNeedModalTitle">
-                            Cats in Need
-                          </h3>
+                          <h3 class="modal-title" id="CatsInNeedModalTitle">Cats in Need</h3>
                         </div>
                         <div class="modal-body">
-                          <em>
-                            Cats in Need est une association dédiée à aider les chats errants de Phnom Penh à survivre, être soignés et adoptés.
-                          </em>
+                          <em>Cats in Need est une association dédiée à aider les chats errants de Phnom Penh à survivre, être soignés et adoptés.</em>
                           <h4>Projet</h4>
-                          <p>
-                            Identité visuelle (création de logo & charte graphique), gestion des réseaux sociaux, organisation d’événements.
-                          </p>
+                          <p>Identité visuelle (création de logo & charte graphique), gestion des réseaux sociaux, organisation d'événements.</p>
                           <br />
-                          <a
-                            href="https://www.instagram.com/catsinneedpp/"
-                            target="_blank"
-                          >
-                            <button class="button">Instagram</button>
-                          </a>
-                          <a
-                            href="https://web.facebook.com/profile.php?id=61560444118502"
-                            target="_blank"
-                          >
-                            <button class="button">Facebook</button>
-                          </a>
+                          <a href="https://www.instagram.com/catsinneedpp/" target="_blank" class="button">Instagram</a>
+                          <a href="https://web.facebook.com/profile.php?id=61560444118502" target="_blank" class="button">Facebook</a>
                         </div>
                         <div class="modal-footer">
-                          <button
-                            type="button"
-                            class="btn btn-secondary button"
-                            data-bs-dismiss="modal"
-                          >
-                            Fermer
-                          </button>
+                          <button type="button" class="btn btn-secondary button" data-bs-dismiss="modal">Fermer</button>
                         </div>
                       </div>
                     </div>
@@ -424,9 +268,10 @@
                 </div>
               </div>
             </div>
-            <!--------- OCEANE ----------->
+
+            <!-- OCÉANE DECROZE -->
             <div class="col card text-black p-0 rounded-0 border-0">
-              <img class="card-img rounded-0" src="./resources/img/portfolio/Decroze.jpg" alt="Océane Decroze Image" />
+              <img class="card-img rounded-0" src="./resources/img/portfolio/Decroze.jpg" alt="Océane Decroze" />
               <div class="card-img-overlay rounded-0 d-flex flex-column justify-content-center align-items-center">
                 <div class="text rounded-0 text-center">
                   <h3 class="card-title m-3">Océane Decroze</h3>
@@ -440,9 +285,9 @@
                         <div class="modal-body">
                           <em>Océane Decroze est une artiste-peintre muraliste basée au Cambodge, avec une passion pour les fleurs et la nature.</em>
                           <h4>Projet</h4>
-                          <p>Création d’un site Wix de A à Z pour présenter l’artiste, son travail et ses services.</p>
+                          <p>Création d'un site Wix de A à Z pour présenter l'artiste, son travail et ses services.</p>
                           <br />
-                          <a href="https://www.oceanedecroze-art.com/" target="_blank"><button class="button">Site Internet</button></a>
+                          <a href="https://www.oceanedecroze-art.com/" target="_blank" class="button">Site Internet</a>
                         </div>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary button" data-bs-dismiss="modal">Fermer</button>
@@ -453,9 +298,10 @@
                 </div>
               </div>
             </div>
-            <!--------- THIBAULT ----------->
+
+            <!-- THIBAULT GENON-CATALOT -->
             <div class="col card text-black p-0 rounded-0 border-0">
-              <img class="card-img rounded-0" src="./resources/img/portfolio/Genon.jpg" alt="Thibault Genon-Catalot Image" />
+              <img class="card-img rounded-0" src="./resources/img/portfolio/Genon.jpg" alt="Thibault Genon-Catalot" />
               <div class="card-img-overlay rounded-0 d-flex flex-column justify-content-center align-items-center">
                 <div class="text rounded-0 text-center">
                   <h3 class="card-title m-3">Thibault Genon-Catalot</h3>
@@ -471,7 +317,7 @@
                           <h4>Projet</h4>
                           <p>Identité visuelle, montage vidéo, stratégie marketing.</p>
                           <br />
-                          <a href="https://www.linkedin.com/posts/thibault-genon_il-y-a-quelques-mois-jai-d%C3%A9cid%C3%A9-de-booster-activity-7212123723691098112-t6BK?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAABED2RwBRQy4MnE5Qc35b8tChZbwd903k18&utm_campaign=copy_link" target="_blank"><button class="button">Vidéo</button></a>
+                          <a href="https://www.linkedin.com/posts/thibault-genon_il-y-a-quelques-mois-jai-d%C3%A9cid%C3%A9-de-booster-activity-7212123723691098112-t6BK?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAABED2RwBRQy4MnE5Qc35b8tChZbwd903k18&utm_campaign=copy_link" target="_blank" class="button">Vidéo</a>
                         </div>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary button" data-bs-dismiss="modal">Fermer</button>
@@ -482,9 +328,10 @@
                 </div>
               </div>
             </div>
-            <!--------- CANOPY ----------->
+
+            <!-- CANOPY FEST -->
             <div class="col card text-black p-0 rounded-0 border-0">
-              <img class="card-img rounded-0" src="./resources/img/portfolio/CanopyFest.jpg" alt="Canopy Fest Image" />
+              <img class="card-img rounded-0" src="./resources/img/portfolio/CanopyFest.jpg" alt="Canopy Fest" />
               <div class="card-img-overlay rounded-0 d-flex flex-column justify-content-center align-items-center">
                 <div class="text rounded-0 text-center">
                   <h3 class="card-title m-3">Canopy Fest</h3>
@@ -496,12 +343,12 @@
                           <h3 class="modal-title" id="CanopyModalTitle">Canopy Fest</h3>
                         </div>
                         <div class="modal-body">
-                          <em>Première édition d’un festival de deux jours à Phnom Penh, Cambodge. Au programme : activités, divertissements familiaux, concerts, spectacles culturels et marché artisanal en plein air.</em>
+                          <em>Première édition d'un festival de deux jours à Phnom Penh, Cambodge. Au programme : activités, divertissements familiaux, concerts, spectacles culturels et marché artisanal en plein air.</em>
                           <h4>Projet</h4>
-                          <p>Identité visuelle (création de logo & charte graphique), gestion des réseaux sociaux, organisation d’événements & recherche de sponsors.</p>
+                          <p>Identité visuelle (création de logo & charte graphique), gestion des réseaux sociaux, organisation d'événements & recherche de sponsors.</p>
                           <br />
-                          <a href="https://web.facebook.com/profile.php?id=61567848184781" target="_blank"><button class="button">Page Facebook</button></a>
-                          <a href="https://web.facebook.com/share/v/16PaJzHubg/" target="_blank"><button class="button">Vidéo officielle</button></a>
+                          <a href="https://web.facebook.com/profile.php?id=61567848184781" target="_blank" class="button">Page Facebook</a>
+                          <a href="https://web.facebook.com/share/v/16PaJzHubg/" target="_blank" class="button">Vidéo officielle</a>
                         </div>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary button" data-bs-dismiss="modal">Fermer</button>
@@ -512,72 +359,29 @@
                 </div>
               </div>
             </div>
-            <!--------- TRAVELROLL ----------->
+
+            <!-- TRAVELROLL -->
             <div class="col card text-black p-0 rounded-0 border-0">
-              <img
-                class="card-img rounded-0"
-                src="./resources/img/portfolio/TravelRoll.jpg"
-                alt="card Image"
-              />
-              <div
-                class="card-img-overlay rounded-0 d-flex flex-column justify-content-center align-items-center"
-              >
+              <img class="card-img rounded-0" src="./resources/img/portfolio/TravelRoll.jpg" alt="TravelRoll" />
+              <div class="card-img-overlay rounded-0 d-flex flex-column justify-content-center align-items-center">
                 <div class="text rounded-0 text-center">
                   <h3 class="card-title m-3">TravelRoll</h3>
-                  <!-- Button trigger modal -->
-                  <button
-                    type="button"
-                    class="button cardButton"
-                    data-bs-toggle="modal"
-                    data-bs-target="#TravelRollModal"
-                  >
-                    Voir Plus
-                  </button>
-                  <!-- Modal -->
-                  <div
-                    class="modal fade"
-                    id="TravelRollModal"
-                    tabindex="-1"
-                    role="dialog"
-                    aria-labelledby="TravelRollModalTitle"
-                    aria-hidden="true"
-                  >
-                    <div
-                      class="modal-dialog modal-dialog-centered"
-                      role="document"
-                    >
+                  <button type="button" class="button cardButton" data-bs-toggle="modal" data-bs-target="#TravelRollModal">Voir Plus</button>
+                  <div class="modal fade" id="TravelRollModal" tabindex="-1" role="dialog" aria-labelledby="TravelRollModalTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
                       <div class="modal-content">
                         <div class="modal-header d-flex justify-content-center">
-                          <h3 class="modal-title" id="exampleModalLongTitle">
-                            TravelRoll
-                          </h3>
+                          <h3 class="modal-title" id="TravelRollModalTitle">TravelRoll</h3>
                         </div>
                         <div class="modal-body">
-                          <em
-                            >Artiste spécialisé dans l'illustration de rouleaux
-                            de voyage autour du Cambodge et de l'Asie du
-                            Sud-Est</em
-                          >
+                          <em>Artiste spécialisé dans l'illustration de rouleaux de voyage autour du Cambodge et de l'Asie du Sud-Est</em>
                           <h4>Projet</h4>
-                          <p>
-                            Création et mesure des résultats des campagnes
-                            d'e-mails. Refonte SEO du site Internet.
-                          </p>
+                          <p>Création et mesure des résultats des campagnes d'e-mails. Refonte SEO du site Internet.</p>
                           <br />
-                          <a
-                            href="https://0lzxy.mjt.lu/nl3/VrlAA-TJ5hOWitU9uHckfA?hl=fr"
-                            target="_blank"
-                            ><button class="button">Newsletter</button></a
-                          >
+                          <a href="https://0lzxy.mjt.lu/nl3/VrlAA-TJ5hOWitU9uHckfA?hl=fr" target="_blank" class="button">Newsletter</a>
                         </div>
                         <div class="modal-footer">
-                          <button
-                            type="button"
-                            class="btn btn-secondary button"
-                            data-bs-dismiss="modal"
-                          >
-                            Fermer
-                          </button>
+                          <button type="button" class="btn btn-secondary button" data-bs-dismiss="modal">Fermer</button>
                         </div>
                       </div>
                     </div>
@@ -585,72 +389,29 @@
                 </div>
               </div>
             </div>
-            <!--------- FASTCONTACT ----------->
+
+            <!-- FASTCONTACT -->
             <div class="col card text-black p-0 rounded-0 border-0">
-              <img
-                class="card-img rounded-0"
-                src="./resources/img/portfolio/FastContact.jpg"
-                alt="card Image"
-              />
-              <div
-                class="card-img-overlay rounded-0 d-flex flex-column justify-content-center align-items-center"
-              >
+              <img class="card-img rounded-0" src="./resources/img/portfolio/FastContact.jpg" alt="Fastcontact" />
+              <div class="card-img-overlay rounded-0 d-flex flex-column justify-content-center align-items-center">
                 <div class="text rounded-0 text-center">
                   <h3 class="card-title m-3">Fastcontact</h3>
-                  <!-- Button trigger modal -->
-                  <button
-                    type="button"
-                    class="button cardButton"
-                    data-bs-toggle="modal"
-                    data-bs-target="#FastContactModal"
-                  >
-                    Voir Plus
-                  </button>
-                  <!-- Modal -->
-                  <div
-                    class="modal fade"
-                    id="FastContactModal"
-                    tabindex="-1"
-                    role="dialog"
-                    aria-labelledby="FastContactModalTitle"
-                    aria-hidden="true"
-                  >
-                    <div
-                      class="modal-dialog modal-dialog-centered"
-                      role="document"
-                    >
+                  <button type="button" class="button cardButton" data-bs-toggle="modal" data-bs-target="#FastContactModal">Voir Plus</button>
+                  <div class="modal fade" id="FastContactModal" tabindex="-1" role="dialog" aria-labelledby="FastContactModalTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
                       <div class="modal-content">
                         <div class="modal-header d-flex justify-content-center">
-                          <h3 class="modal-title" id="exampleModalLongTitle">
-                            Fastcontact
-                          </h3>
+                          <h3 class="modal-title" id="FastContactModalTitle">Fastcontact</h3>
                         </div>
                         <div class="modal-body">
-                          <em
-                            >Entreprise spécialisée dans l’E-mailing des marques
-                            de E-commerce</em
-                          >
+                          <em>Entreprise spécialisée dans l'E-mailing des marques de E-commerce</em>
                           <h4>Projet</h4>
-                          <p>
-                            Planification, conceptualisation et exécution de
-                            campagnes d'e-mails avec suivi des résultats.
-                            Génération et optimisation de flux automatisés.
-                          </p>
+                          <p>Planification, conceptualisation et exécution de campagnes d'e-mails avec suivi des résultats. Génération et optimisation de flux automatisés.</p>
                           <br />
-                          <a
-                            href="https://publuu.com/flip-book/139760/354126"
-                            target="_blank"
-                            ><button class="button">Newsletter</button></a
-                          >
+                          <a href="https://publuu.com/flip-book/139760/354126" target="_blank" class="button">Newsletter</a>
                         </div>
                         <div class="modal-footer">
-                          <button
-                            type="button"
-                            class="btn btn-secondary button"
-                            data-bs-dismiss="modal"
-                          >
-                            Fermer
-                          </button>
+                          <button type="button" class="btn btn-secondary button" data-bs-dismiss="modal">Fermer</button>
                         </div>
                       </div>
                     </div>
@@ -658,153 +419,29 @@
                 </div>
               </div>
             </div>
-            <!--------- BODIA ----------->
+
+            <!-- MANGO TANGO ASIA -->
             <div class="col card text-black p-0 rounded-0 border-0">
-              <img
-                class="card-img rounded-0"
-                src="./resources/img/portfolio/Bodia.jpg"
-                alt="card Image"
-              />
-              <div
-                class="card-img-overlay rounded-0 d-flex flex-column justify-content-center align-items-center"
-              >
-                <div class="text rounded-0 text-center">
-                  <h3 class="card-title m-3">Bodia</h3>
-                  <!-- Button trigger modal -->
-                  <button
-                    type="button"
-                    class="button cardButton"
-                    data-bs-toggle="modal"
-                    data-bs-target="#BodiaModal"
-                  >
-                    Voir Plus
-                  </button>
-                  <!-- Modal -->
-                  <div
-                    class="modal fade"
-                    id="BodiaModal"
-                    tabindex="-1"
-                    role="dialog"
-                    aria-labelledby="BodiaModalTitle"
-                    aria-hidden="true"
-                  >
-                    <div
-                      class="modal-dialog modal-dialog-centered"
-                      role="document"
-                    >
-                      <div class="modal-content">
-                        <div class="modal-header d-flex justify-content-center">
-                          <h3 class="modal-title" id="exampleModalLongTitle">
-                            Bodia
-                          </h3>
-                        </div>
-                        <div class="modal-body">
-                          <em
-                            >Marque franco-khmère de bien-être et de produits
-                            cosmétiques de luxe possédant Spas et boutiques au
-                            Cambodge</em
-                          >
-                          <h4>Projet</h4>
-                          <p>
-                            Repenser les sites internet, animation des réseaux
-                            sociaux et collaborations avec les influenceurs,
-                            amélioration de la satisfaction client, gestion des
-                            newsletters et mise en œuvre de stratégies
-                            publicitaires efficaces.
-                          </p>
-                          <br />
-                          <div>
-                            <a href="https://bodia.com/fr/" target="_blank"
-                              ><button class="button">Site Internet</button></a
-                            >
-                            <a
-                              href="resources/img/NewsletterBodiaFR.pdf"
-                              target="_blank"
-                              ><button class="button">Newsletter</button></a
-                            >
-                          </div>
-                        </div>
-                        <div class="modal-footer">
-                          <button
-                            type="button"
-                            class="btn btn-secondary button"
-                            data-bs-dismiss="modal"
-                          >
-                            Fermer
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--------- MANGO TANGO ----------->
-            <div class="col card text-black p-0 rounded-0 border-0">
-              <img
-                class="card-img rounded-0"
-                src="./resources/img/portfolio/MangoTango.jpg"
-                alt="card Image"
-              />
-              <div
-                class="card-img-overlay rounded-0 d-flex flex-column justify-content-center align-items-center"
-              >
+              <img class="card-img rounded-0" src="./resources/img/portfolio/MangoTango.jpg" alt="Mango Tango Asia" />
+              <div class="card-img-overlay rounded-0 d-flex flex-column justify-content-center align-items-center">
                 <div class="text rounded-0 text-center">
                   <h3 class="card-title m-3">Mango Tango Asia</h3>
-                  <!-- Button trigger modal -->
-                  <button
-                    type="button"
-                    class="button cardButton"
-                    data-bs-toggle="modal"
-                    data-bs-target="#MangoTangoModal"
-                  >
-                    Voir Plus
-                  </button>
-                  <!-- Modal -->
-                  <div
-                    class="modal fade"
-                    id="MangoTangoModal"
-                    tabindex="-1"
-                    role="dialog"
-                    aria-labelledby="MangoTangoModalTitle"
-                    aria-hidden="true"
-                  >
-                    <div
-                      class="modal-dialog modal-dialog-centered"
-                      role="document"
-                    >
+                  <button type="button" class="button cardButton" data-bs-toggle="modal" data-bs-target="#MangoTangoModal">Voir Plus</button>
+                  <div class="modal fade" id="MangoTangoModal" tabindex="-1" role="dialog" aria-labelledby="MangoTangoModalTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
                       <div class="modal-content">
                         <div class="modal-header d-flex justify-content-center">
-                          <h3 class="modal-title" id="exampleModalLongTitle">
-                            Mango Tango Asia
-                          </h3>
+                          <h3 class="modal-title" id="MangoTangoModalTitle">Mango Tango Asia</h3>
                         </div>
                         <div class="modal-body">
-                          <em
-                            >Agence de publicité et de communication créative
-                            basée à Phnom Penh</em
-                          >
+                          <em>Agence de publicité et de communication créative basée à Phnom Penh</em>
                           <h4>Projet</h4>
-                          <p>
-                            Animer les réseaux sociaux et mettre en valeur
-                            l'agence, son travail, ses équipes et ses valeurs
-                            grâce à des stratégies de communication engageantes.
-                          </p>
+                          <p>Animer les réseaux sociaux et mettre en valeur l'agence, son travail, ses équipes et ses valeurs grâce à des stratégies de communication engageantes.</p>
                           <br />
-                          <a
-                            href="https://www.facebook.com/watch/?v=632209480900355"
-                            target="_blank"
-                            ><button class="button">Vidéo</button></a
-                          >
+                          <a href="https://www.facebook.com/watch/?v=632209480900355" target="_blank" class="button">Vidéo</a>
                         </div>
                         <div class="modal-footer">
-                          <button
-                            type="button"
-                            class="btn btn-secondary button"
-                            data-bs-dismiss="modal"
-                          >
-                            Fermer
-                          </button>
+                          <button type="button" class="btn btn-secondary button" data-bs-dismiss="modal">Fermer</button>
                         </div>
                       </div>
                     </div>
@@ -812,71 +449,29 @@
                 </div>
               </div>
             </div>
-            <!--------- CAMBOTICKET ----------->
+
+            <!-- CAMBOTICKET -->
             <div class="col card text-black p-0 rounded-0 border-0">
-              <img
-                class="card-img rounded-0"
-                src="./resources/img/portfolio/Camboticket.jpg"
-                alt="card Image"
-              />
-              <div
-                class="card-img-overlay rounded-0 d-flex flex-column justify-content-center align-items-center"
-              >
+              <img class="card-img rounded-0" src="./resources/img/portfolio/Camboticket.jpg" alt="Camboticket" />
+              <div class="card-img-overlay rounded-0 d-flex flex-column justify-content-center align-items-center">
                 <div class="text rounded-0 text-center">
                   <h3 class="card-title m-3">Camboticket</h3>
-                  <!-- Button trigger modal -->
-                  <button
-                    type="button"
-                    class="button cardButton"
-                    data-bs-toggle="modal"
-                    data-bs-target="#CamboticketModal"
-                  >
-                    Voir Plus
-                  </button>
-                  <!-- Modal -->
-                  <div
-                    class="modal fade"
-                    id="CamboticketModal"
-                    tabindex="-1"
-                    role="dialog"
-                    aria-labelledby="CamboticketModalTitle"
-                    aria-hidden="true"
-                  >
-                    <div
-                      class="modal-dialog modal-dialog-centered"
-                      role="document"
-                    >
+                  <button type="button" class="button cardButton" data-bs-toggle="modal" data-bs-target="#CamboticketModal">Voir Plus</button>
+                  <div class="modal fade" id="CamboticketModal" tabindex="-1" role="dialog" aria-labelledby="CamboticketModalTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
                       <div class="modal-content">
                         <div class="modal-header d-flex justify-content-center">
-                          <h3 class="modal-title" id="exampleModalLongTitle">
-                            Camboticket
-                          </h3>
+                          <h3 class="modal-title" id="CamboticketModalTitle">Camboticket</h3>
                         </div>
                         <div class="modal-body">
-                          <em
-                            >Plateforme en ligne de réservation de bus, taxis,
-                            ferries et activités à travers le Cambodge et les
-                            pays voisins</em
-                          >
+                          <em>Plateforme en ligne de réservation de bus, taxis, ferries et activités à travers le Cambodge et les pays voisins</em>
                           <h4>Projet</h4>
-                          <p>
-                            Gérer l’ensemble des canaux de communication en
-                            ligne et hors ligne afin d'améliorer la présence
-                            numérique de la plateforme.
-                          </p>
+                          <p>Gérer l'ensemble des canaux de communication en ligne et hors ligne afin d'améliorer la présence numérique de la plateforme.</p>
                           <br />
-                          <a href="https://www.camboticket.com/" target="_blank"
-                            ><button class="button">Site Internet</button></a
-                          >
+                          <a href="https://www.camboticket.com/" target="_blank" class="button">Site Internet</a>
                         </div>
                         <div class="modal-footer">
-                          <button
-                            type="button"
-                            class="btn btn-secondary button"
-                            data-bs-dismiss="modal"
-                          >
-                            Fermer
-                          </button>
+                          <button type="button" class="btn btn-secondary button" data-bs-dismiss="modal">Fermer</button>
                         </div>
                       </div>
                     </div>
@@ -884,67 +479,28 @@
                 </div>
               </div>
             </div>
-            <!--------- Saveurs du Mékong  ----------->
+
+            <!-- SAVEURS DU MÉKONG -->
             <div class="col card text-black p-0 rounded-0 border-0">
-              <img
-                class="card-img rounded-0"
-                src="./resources/img/portfolio/SaveurMekong.jpg"
-                alt="card Image"
-              />
-              <div
-                class="card-img-overlay rounded-0 d-flex flex-column justify-content-center align-items-center"
-              >
+              <img class="card-img rounded-0" src="./resources/img/portfolio/SaveurMekong.jpg" alt="Saveurs du Mékong" />
+              <div class="card-img-overlay rounded-0 d-flex flex-column justify-content-center align-items-center">
                 <div class="text rounded-0 text-center">
                   <h3 class="card-title m-3">Saveurs du Mékong</h3>
-                  <!-- Button trigger modal -->
-                  <button
-                    type="button"
-                    class="button cardButton"
-                    data-bs-toggle="modal"
-                    data-bs-target="#SaveurMekongModal"
-                  >
-                    Voir Plus
-                  </button>
-                  <!-- Modal -->
-                  <div
-                    class="modal fade"
-                    id="SaveurMekongModal"
-                    tabindex="-1"
-                    role="dialog"
-                    aria-labelledby="SaveurMekongModalTitle"
-                    aria-hidden="true"
-                  >
-                    <div
-                      class="modal-dialog modal-dialog-centered"
-                      role="document"
-                    >
+                  <button type="button" class="button cardButton" data-bs-toggle="modal" data-bs-target="#SaveurMekongModal">Voir Plus</button>
+                  <div class="modal fade" id="SaveurMekongModal" tabindex="-1" role="dialog" aria-labelledby="SaveurMekongModalTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
                       <div class="modal-content">
                         <div class="modal-header d-flex justify-content-center">
-                          <h3 class="modal-title" id="exampleModalLongTitle">
-                            Saveurs du Mékong
-                          </h3>
+                          <h3 class="modal-title" id="SaveurMekongModalTitle">Saveurs du Mékong</h3>
                         </div>
                         <div class="modal-body">
-                          <em
-                            >Marque de jus de fruits organiques basée au
-                            Cambodge (Le Fruit)</em
-                          >
+                          <em>Marque de jus de fruits organiques basée au Cambodge</em>
                           <h4>Projet</h4>
-                          <p>
-                            Imagination d’un flyer à déposer sur les tables des
-                            Hôtels de luxe partenaires afin de communiquer sur
-                            les jus de fruits de la marque.
-                          </p>
+                          <p>Imagination d'un flyer à déposer sur les tables des Hôtels de luxe partenaires afin de communiquer sur les jus de fruits de la marque.</p>
                           <br />
                         </div>
                         <div class="modal-footer">
-                          <button
-                            type="button"
-                            class="btn btn-secondary button"
-                            data-bs-dismiss="modal"
-                          >
-                            Fermer
-                          </button>
+                          <button type="button" class="btn btn-secondary button" data-bs-dismiss="modal">Fermer</button>
                         </div>
                       </div>
                     </div>
@@ -952,69 +508,28 @@
                 </div>
               </div>
             </div>
-            <!--------- CLS Immo  ----------->
+
+            <!-- CLS IMMO -->
             <div class="col card text-black p-0 rounded-0 border-0">
-              <img
-                class="card-img rounded-0"
-                src="./resources/img/portfolio/CLS.jpg"
-                alt="card Image"
-              />
-              <div
-                class="card-img-overlay rounded-0 d-flex flex-column justify-content-center align-items-center"
-              >
+              <img class="card-img rounded-0" src="./resources/img/portfolio/CLS.jpg" alt="CLS Immo" />
+              <div class="card-img-overlay rounded-0 d-flex flex-column justify-content-center align-items-center">
                 <div class="text rounded-0 text-center">
                   <h3 class="card-title m-3">CLS Immo</h3>
-                  <!-- Button trigger modal -->
-                  <button
-                    type="button"
-                    class="button cardButton"
-                    data-bs-toggle="modal"
-                    data-bs-target="#CLSImmoModal"
-                  >
-                    Voir Plus
-                  </button>
-                  <!-- Modal -->
-                  <div
-                    class="modal fade"
-                    id="CLSImmoModal"
-                    tabindex="-1"
-                    role="dialog"
-                    aria-labelledby="CLSImmoModalTitle"
-                    aria-hidden="true"
-                  >
-                    <div
-                      class="modal-dialog modal-dialog-centered"
-                      role="document"
-                    >
+                  <button type="button" class="button cardButton" data-bs-toggle="modal" data-bs-target="#CLSImmoModal">Voir Plus</button>
+                  <div class="modal fade" id="CLSImmoModal" tabindex="-1" role="dialog" aria-labelledby="CLSImmoModalTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
                       <div class="modal-content">
                         <div class="modal-header d-flex justify-content-center">
-                          <h3 class="modal-title" id="exampleModalLongTitle">
-                            CLS Immo
-                          </h3>
+                          <h3 class="modal-title" id="CLSImmoModalTitle">CLS Immo</h3>
                         </div>
                         <div class="modal-body">
-                          <em
-                            >CLS Immo est une agence immobilière basée en France
-                            cherchant à développer sa visibilité sur les réseaux
-                            sociaux afin d’attirer des vendeurs de biens</em
-                          >
+                          <em>CLS Immo est une agence immobilière basée en France cherchant à développer sa visibilité sur les réseaux sociaux afin d'attirer des vendeurs de biens</em>
                           <h4>Projet</h4>
-                          <p>
-                            Création de designs, lancement et suivi des
-                            publicités via Facebook Meta afin de développer leur
-                            notoriété et pousser les potentiels vendeurs à la
-                            prise de contact.
-                          </p>
+                          <p>Création de designs, lancement et suivi des publicités via Facebook Meta afin de développer leur notoriété et pousser les potentiels vendeurs à la prise de contact.</p>
                           <br />
                         </div>
                         <div class="modal-footer">
-                          <button
-                            type="button"
-                            class="btn btn-secondary button"
-                            data-bs-dismiss="modal"
-                          >
-                            Fermer
-                          </button>
+                          <button type="button" class="btn btn-secondary button" data-bs-dismiss="modal">Fermer</button>
                         </div>
                       </div>
                     </div>
@@ -1022,69 +537,28 @@
                 </div>
               </div>
             </div>
-            <!--------- DATACUMULUS  ----------->
+
+            <!-- DATACUMULUS -->
             <div class="col card text-black p-0 rounded-0 border-0">
-              <img
-                class="card-img rounded-0"
-                src="./resources/img/portfolio/Datacumulus.jpg"
-                alt="card Image"
-              />
-              <div
-                class="card-img-overlay rounded-0 d-flex flex-column justify-content-center align-items-center"
-              >
+              <img class="card-img rounded-0" src="./resources/img/portfolio/Datacumulus.jpg" alt="Datacumulus Oü" />
+              <div class="card-img-overlay rounded-0 d-flex flex-column justify-content-center align-items-center">
                 <div class="text rounded-0 text-center">
                   <h3 class="card-title m-3">Datacumulus Oü</h3>
-                  <!-- Button trigger modal -->
-                  <button
-                    type="button"
-                    class="button cardButton"
-                    data-bs-toggle="modal"
-                    data-bs-target="#DatacumulusModal"
-                  >
-                    Voir Plus
-                  </button>
-                  <!-- Modal -->
-                  <div
-                    class="modal fade"
-                    id="DatacumulusModal"
-                    tabindex="-1"
-                    role="dialog"
-                    aria-labelledby="DatacumulusModalTitle"
-                    aria-hidden="true"
-                  >
-                    <div
-                      class="modal-dialog modal-dialog-centered"
-                      role="document"
-                    >
+                  <button type="button" class="button cardButton" data-bs-toggle="modal" data-bs-target="#DatacumulusModal">Voir Plus</button>
+                  <div class="modal fade" id="DatacumulusModal" tabindex="-1" role="dialog" aria-labelledby="DatacumulusModalTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
                       <div class="modal-content">
                         <div class="modal-header d-flex justify-content-center">
-                          <h3 class="modal-title" id="exampleModalLongTitle">
-                            Datacumulus Oü
-                          </h3>
+                          <h3 class="modal-title" id="DatacumulusModalTitle">Datacumulus Oü</h3>
                         </div>
                         <div class="modal-body">
-                          <em
-                            >Stephane Maarek est un formateur Udemy, AWS et
-                            Kafka Expert, suivi par plus de 1,5M d'étudiants en
-                            ligne
-                          </em>
+                          <em>Stephane Maarek est un formateur Udemy, AWS et Kafka Expert, suivi par plus de 1,5M d'étudiants en ligne</em>
                           <h4>Projet</h4>
-                          <p>
-                            Migration des listes de contacts de la plateforme
-                            Mailchimp vers la plateforme Brevo (anciennement
-                            SendinBlue) ; création des flows automatiques et
-                            importation des modèles d’emails.
-                          </p>
+                          <p>Migration des listes de contacts de la plateforme Mailchimp vers la plateforme Brevo (anciennement SendinBlue) ; création des flows automatiques et importation des modèles d'emails.</p>
                           <br />
                         </div>
                         <div class="modal-footer">
-                          <button
-                            type="button"
-                            class="btn btn-secondary button"
-                            data-bs-dismiss="modal"
-                          >
-                            Fermer
-                          </button>
+                          <button type="button" class="btn btn-secondary button" data-bs-dismiss="modal">Fermer</button>
                         </div>
                       </div>
                     </div>
@@ -1092,220 +566,97 @@
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>
-    </div>
-      <!-- TESTIMONIES -->
+
+      <!-- TÉMOIGNAGES -->
       <a class="anchor" id="testimonies_section"></a>
       <div class="testimonies mt-5">
         <h2>Témoignages</h2>
-        <div
-          id="carouselExampleIndicators"
-          class="carousel slide mt-3 mb-5"
-          data-bs-theme="dark"
-        >
+        <div id="carouselExampleIndicators" class="carousel slide mt-3 mb-5" data-bs-theme="dark">
           <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="3"
-              aria-label="Slide 4"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="4"
-              aria-label="Slide 5"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="5"
-              aria-label="Slide 6"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="6"
-              aria-label="Slide 7"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="7"
-              aria-label="Slide 8"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="8"
-              aria-label="Slide 9"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="9"
-              aria-label="Slide 10"
-            ></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <div class="text-box mt-0 mt-0">
-                <h3 class="text-center m-0 m-0">Lucas Dudicourt</h3>
-                <h4 class="text-center m-0">Fondateur - Fastcontact</h4>
-                <p class="p-4">
-                  "Camille est non seulement compétente, mais aussi très à
-                  l’écoute, toujours disponible pour se former et apprendre de
-                  nouvelles choses pour améliorer son travail. Elle s’est
-                  parfaitement adaptée à ma manière de travailler. Elle a un
-                  regard constructif sur mon business, et me pose régulièrement
-                  des questions pour améliorer son travail. Je continuerai de
-                  travailler avec elle sur du long terme avec grand plaisir ! Je
-                  recommande vivement !"
-                </p>
+              <div class="text-box">
+                <h3 class="text-center m-0">Lucas Dudicourt</h3>
+                <h4 class="text-center m-0">Fondateur – Fastcontact</h4>
+                <p class="p-4">"Camille est non seulement compétente, mais aussi très à l'écoute, toujours disponible pour se former et apprendre de nouvelles choses pour améliorer son travail. Elle s'est parfaitement adaptée à ma manière de travailler. Elle a un regard constructif sur mon business, et me pose régulièrement des questions pour améliorer son travail. Je continuerai de travailler avec elle sur du long terme avec grand plaisir ! Je recommande vivement !"</p>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="text-box mt-0">
+              <div class="text-box">
                 <h3 class="text-center m-0">Stéphane Maarek</h3>
-                <h4 class="text-center m-0">
-                  Instructeur Udemy, 9x AWS Certifié, Expert Kafka
-                </h4>
-                <p class="p-4">
-                  "Camille a fait un excellent travail en migrant ma liste de
-                  diffusion et ma configuration de MailChimp à SendInBlue. Elle
-                  a recréé de manière transparente les modèles très importants
-                  que j'utilise pour mon entreprise. Communication facile, merci
-                  beaucoup !"
-                </p>
+                <h4 class="text-center m-0">Instructeur Udemy, 9x AWS Certifié, Expert Kafka</h4>
+                <p class="p-4">"Camille a fait un excellent travail en migrant ma liste de diffusion et ma configuration de MailChimp à SendInBlue. Elle a recréé de manière transparente les modèles très importants que j'utilise pour mon entreprise. Communication facile, merci beaucoup !"</p>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="text-box mt-0">
+              <div class="text-box">
                 <h3 class="text-center m-0">Antoine Bancel</h3>
-                <h4 class="text-center m-0">General Manager - Bodia</h4>
-                <p class="p-4">
-                  "Je recommande Mrs Camille CHOQUEL pour sa rigueur et son
-                  abilité à organiser son travail autant que celui de ses
-                  collègues, laissant ainsi l’équipe plus autonome et ayant
-                  acquéri des compétences d’analyse et d’organisation grâce à
-                  son action."
-                </p>
+                <h4 class="text-center m-0">General Manager – Bodia</h4>
+                <p class="p-4">"Je recommande Mme Camille CHOQUEL pour sa rigueur et son abilité à organiser son travail autant que celui de ses collègues, laissant ainsi l'équipe plus autonome et ayant acquis des compétences d'analyse et d'organisation grâce à son action."</p>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="text-box mt-0">
+              <div class="text-box">
                 <h3 class="text-center m-0">Nancy Jaffe</h3>
-                <h4 class="text-center m-0">
-                  Chief Strategy Officier - Mango Tango Asia
-                </h4>
-                <p class="p-4">
-                  "C’est un plaisir de travailler avec Camille. Elle possède
-                  d’excellentes qualités de gestion de projet et sait comment
-                  garder son équipe et ses clients satisfaits."
-                </p>
+                <h4 class="text-center m-0">Chief Strategy Officer – Mango Tango Asia</h4>
+                <p class="p-4">"C'est un plaisir de travailler avec Camille. Elle possède d'excellentes qualités de gestion de projet et sait comment garder son équipe et ses clients satisfaits."</p>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="text-box mt-0">
+              <div class="text-box">
                 <h3 class="text-center m-0">Shivam Thripathi</h3>
-                <h4 class="text-center m-0">
-                  CEO & Co-Fondateur - Camboticket
-                </h4>
-                <p class="p-4">
-                  "Camille est une bonne communicante et une travailleuse
-                  acharnée. Elle est toujours prête à relever de nouveaux défis
-                  et a démontré une volonté d’acquérir de nouvelles compétences.
-                  Elle travaille bien en équipe et a démontré de bonnes
-                  capacités de gestion d’équipe."
-                </p>
+                <h4 class="text-center m-0">CEO & Co-Fondateur – Camboticket</h4>
+                <p class="p-4">"Camille est une bonne communicante et une travailleuse acharnée. Elle est toujours prête à relever de nouveaux défis et a démontré une volonté d'acquérir de nouvelles compétences. Elle travaille bien en équipe et a démontré de bonnes capacités de gestion d'équipe."</p>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="text-box mt-0">
+              <div class="text-box">
                 <h3 class="text-center m-0">Thomas Charneau</h3>
-                <h4 class="text-center m-0">
-                  Marketing & Communication Manager - Bodia
-                </h4>
-                <p class="p-4">
-                  "Camille est l’une des meilleures personnes avec qui j’ai eu
-                  la chance de travailler. Je recommande vivement son expertise
-                  à toute entreprise à la recherche d’un responsable marketing
-                  digital. Sa capacité à aborder n’importe quel problème est
-                  remarquable et ce toujours avec patience, compréhension et un
-                  sourire chaleureux. Camille deviendrait un membre apprécié de
-                  n’importe quelle équipe."
-                </p>
+                <h4 class="text-center m-0">Marketing & Communication Manager – Bodia</h4>
+                <p class="p-4">"Camille est l'une des meilleures personnes avec qui j'ai eu la chance de travailler. Je recommande vivement son expertise à toute entreprise à la recherche d'un responsable marketing digital. Sa capacité à aborder n'importe quel problème est remarquable et ce toujours avec patience, compréhension et un sourire chaleureux. Camille deviendrait un membre apprécié de n'importe quelle équipe."</p>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="text-box mt-0">
+              <div class="text-box">
                 <h3 class="text-center m-0">Anne-Laure Bartenay</h3>
-                <h4 class="text-center m-0">Responsable sponsoring - Canopy Fest</h4>
-                <p class="p-4">
-                  ''Je recommande vivement Camille Choquel en tant que professionnelle du marketing et de la communication. Elle est créative, réactive et très adaptable, respectant toujours les délais et les exigences des projets avec précision. Travailler avec elle a été un vrai plaisir !''
-                </p>
+                <h4 class="text-center m-0">Responsable Sponsoring – Canopy Fest</h4>
+                <p class="p-4">"Je recommande vivement Camille Choquel en tant que professionnelle du marketing et de la communication. Elle est créative, réactive et très adaptable, respectant toujours les délais et les exigences des projets avec précision. Travailler avec elle a été un vrai plaisir !"</p>
               </div>
             </div>
-
             <div class="carousel-item">
-              <div class="text-box mt-0">
+              <div class="text-box">
                 <h3 class="text-center m-0">Thibault Genon-Catalot</h3>
                 <h4 class="text-center m-0">Consultant Marketing</h4>
-                <p class="p-4">
-                  ''J’ai eu le plaisir de travailler avec Camille pendant quelques mois pour la gestion de mes réseaux sociaux. Ensemble, nous avons pu poser des bases solides pour ma stratégie social media.
-                  Camille est fiable, impliquée et fait preuve d’un grand sens des responsabilités dans son travail. Elle n’a pas peur de dépasser les attentes, ce qui est très appréciable. Toujours joignable, réactive et de bonne humeur, je la recommande vivement pour toute mission liée aux réseaux sociaux.''
-                </p>
+                <p class="p-4">"J'ai eu le plaisir de travailler avec Camille pendant quelques mois pour la gestion de mes réseaux sociaux. Ensemble, nous avons pu poser des bases solides pour ma stratégie social media. Camille est fiable, impliquée et fait preuve d'un grand sens des responsabilités dans son travail. Elle n'a pas peur de dépasser les attentes, ce qui est très appréciable. Toujours joignable, réactive et de bonne humeur, je la recommande vivement pour toute mission liée aux réseaux sociaux."</p>
               </div>
             </div>
-
             <div class="carousel-item">
-              <div class="text-box mt-0">
+              <div class="text-box">
                 <h3 class="text-center m-0">Océane Decroze</h3>
                 <h4 class="text-center m-0">Artiste, muraliste</h4>
-                <p class="p-4">
-                  ''Je recommande vivement Camille pour ses excellents services en développement web. Elle est à l’écoute, réactive et toujours disponible pour répondre à vos besoins. Elle comprend parfaitement les enjeux d’un projet et a veillé à ce que mon nouveau site corresponde parfaitement à mes attentes. Je ne pouvais pas rêver meilleure expérience !''
-                </p>
+                <p class="p-4">"Je recommande vivement Camille pour ses excellents services en développement web. Elle est à l'écoute, réactive et toujours disponible pour répondre à vos besoins. Elle comprend parfaitement les enjeux d'un projet et a veillé à ce que mon nouveau site corresponde parfaitement à mes attentes. Je ne pouvais pas rêver meilleure expérience !"</p>
               </div>
             </div>
-
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev"
-          >
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Précédent</span>
           </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next"
-          >
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Suivant</span>
           </button>
@@ -1313,104 +664,55 @@
       </div>
 
       <!-- CONTACT -->
-
       <a class="anchor" id="contact_section"></a>
       <div class="contact mb-5">
         <h2>Contact</h2>
-        <div
-          class="container d-flex flex-column justify-content-center align-content-center"
-        >
+        <div class="container d-flex flex-column justify-content-center align-content-center">
           <h3>Vous souhaitez nous contacter ?</h3>
-          <h4 class="text-center">
-            Contactez-nous pour discuter de vos besoins et de vos objectifs, ou
-            pour demander un devis. Choisissez l'une des options ci-dessous pour
-            nous joindre :
-          </h4>
+          <h4 class="text-center">Contactez-nous pour discuter de vos besoins et de vos objectifs, ou pour demander un devis. Choisissez l'une des options ci-dessous pour nous joindre :</h4>
           <div class="container justify-content-center">
             <div class="row row-cols-3 row-cols-lg-6 m-auto">
               <div class="col">
-                <a
-                  href="https://www.linkedin.com/in/camille-choquel-digitalmarketer/"
-                  target="_blank"
-                  ><img
-                    class="img-fluid"
-                    src="resources/img/contact/linkedIn.png"
-                    alt="LinkedIn"
-                /></a>
+                <a href="https://www.linkedin.com/in/camille-choquel-digitalmarketer/" target="_blank">
+                  <img class="img-fluid" src="resources/img/contact/linkedIn.png" alt="LinkedIn" />
+                </a>
               </div>
               <div class="col">
-                <a
-                  href="https://calendly.com/choquelmarketing/30min"
-                  target="_blank"
-                  ><img
-                    class="img-fluid"
-                    src="resources/img/contact/calendly.png"
-                    alt="Calendly"
-                /></a>
+                <a href="https://calendly.com/choquelmarketing/30min" target="_blank">
+                  <img class="img-fluid" src="resources/img/contact/calendly.png" alt="Calendly" />
+                </a>
               </div>
               <div class="col">
-                <a href="mailto:choquelmarketing@gmail.com" target="_blank"
-                  ><img
-                    class="img-fluid"
-                    src="resources/img/contact/email.png"
-                    alt="Email"
-                /></a>
+                <a href="mailto:choquelmarketing@gmail.com">
+                  <img class="img-fluid" src="resources/img/contact/email.png" alt="Email" />
+                </a>
               </div>
               <div class="col">
-                <a href="https://wa.me/+85585882947" target="_blank"
-                  ><img
-                    class="img-fluid"
-                    src="resources/img/contact/whatsapp.png"
-                    alt="whatsapp"
-                /></a>
+                <a href="https://wa.me/+85585882947" target="_blank">
+                  <img class="img-fluid" src="resources/img/contact/whatsapp.png" alt="WhatsApp" />
+                </a>
               </div>
               <div class="col">
-                <a href="https://t.me/Camille_cc" target="_blank"
-                  ><img
-                    class="img-fluid"
-                    src="resources/img/contact/telegram.png"
-                    alt="telegram"
-                /></a>
+                <a href="https://t.me/Camille_cc" target="_blank">
+                  <img class="img-fluid" src="resources/img/contact/telegram.png" alt="Telegram" />
+                </a>
               </div>
               <div class="col">
-                <a href="https://twitter.com/ChoquelMarketg" target="_blank"
-                  ><img
-                    class="img-fluid"
-                    src="resources/img/contact/twitter.png"
-                    alt="Twitter"
-                /></a>
+                <a href="https://twitter.com/ChoquelMarketg" target="_blank">
+                  <img class="img-fluid" src="resources/img/contact/twitter.png" alt="Twitter / X" />
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
+
       <div class="copyright">
         <p>Copyright © 2025 Choquel Marketing | All Rights Reserved.</p>
       </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="module">
-      // Import the functions you need from the SDKs you need
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
-      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-analytics.js";
-      // TODO: Add SDKs for Firebase products that you want to use
-      // https://firebase.google.com/docs/web/setup#available-libraries
 
-      // Your web app's Firebase configuration
-      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-      const firebaseConfig = {
-        apiKey: "AIzaSyANj20-9HZlsE0Un7X236CaPLkc91BBKTg",
-        authDomain: "choquel-marketing.firebaseapp.com",
-        projectId: "choquel-marketing",
-        storageBucket: "choquel-marketing.appspot.com",
-        messagingSenderId: "199753006499",
-        appId: "1:199753006499:web:e7846841d674e1cb436e16",
-        measurementId: "G-QXV2YY9CGF",
-      };
-      // Initialize Firebase
-      const app = initializeApp(firebaseConfig);
-      const analytics = getAnalytics(app);
-    </script>
+    </div><!-- /.main -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
   </body>
 </html>
