@@ -862,7 +862,7 @@
           </div>
           <h4 class="text-center">Or reach out directly:</h4>
           <div class="container justify-content-center">
-            <div class="row row-cols-3 row-cols-lg-5 m-auto">
+            <div class="row row-cols-3 row-cols-lg-5 m-auto justify-content-center">
               <div class="col">
                 <a href="https://www.linkedin.com/in/camille-choquel-digitalmarketer/" target="_blank">
                   <div class="contact-icon-wrap">
@@ -929,10 +929,11 @@
           entries.forEach(function(entry) {
             if (entry.isIntersecting) {
               entry.target.classList.add('flipped');
-              flipObserver.unobserve(entry.target);
+            } else if (entry.boundingClientRect.top > 0) {
+              entry.target.classList.remove('flipped');
             }
           });
-        }, { threshold: 0.55 });
+        }, { threshold: 0.95 });
         document.querySelectorAll('.services .box').forEach(function(box) {
           flipObserver.observe(box);
         });

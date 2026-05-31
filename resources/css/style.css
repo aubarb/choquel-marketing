@@ -605,10 +605,19 @@ a.anchor {
   }
 
   .portfolio .card-img-overlay .text {
-    background-color: rgba(0, 0, 0, 0.38);
-    padding: 0.5rem 1.25rem 0.75rem;
-    border-radius: 6px;
-    width: 100%;
+    padding: 0.5rem 0 0.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .portfolio .card-img-overlay .text .card-title {
+    background-color: rgba(0, 0, 0, 0.45);
+    padding: 0.15rem 0.65rem !important;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 0 0 0.5rem !important;
   }
 }
 
@@ -653,6 +662,10 @@ a.anchor {
   opacity: 0.9;
 }
 
+.contact a {
+  text-decoration: none;
+}
+
 .contact .contact-icon-wrap {
   display: flex;
   flex-direction: column;
@@ -686,6 +699,16 @@ a.anchor {
   .portfolio,
   .contact {
     padding: 2rem 0;
+  }
+}
+
+@media (hover: none) {
+  .services .container .box .flipCard {
+    transition: 1.3s ease;
+  }
+  .services .container .box {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
   }
 }
 
