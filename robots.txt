@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://choquel-marketing.com/sitemap.xml

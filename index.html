@@ -4,21 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Choquel Marketing" />
-    <meta name="copyright" content="Choquel Marketing 2025. All Rights Reserved." />
-    <meta name="website-name" content="Choquel Marketing" />
-    <meta name="keywords" content="Choquel Marketing, marketing, digital marketing, online marketing, email marketing, email campaign, social media, branding, copywriting, advertising, digital advertising, market research" />
-    <meta name="google" content="nositelinkssearchbox" />
-    <meta name="google" content="notranslate" />
+    <meta name="author" content="Camille Choquel" />
+    <meta name="copyright" content="Choquel Marketing 2026. All Rights Reserved." />
     <meta name="robots" content="index, follow" />
-    <meta name="description" content="Choquel Marketing is a Digital Marketing Company based in France, created by Camille Choquel. We are specialized in global digital marketing strategy & brand awareness." />
-    <meta name="title" content="Choquel Marketing" />
+
+    <!-- ================================================
+    DRAFT — review with Camille before going live:
+    - Title: adapt if she wants a different keyword focus
+    - Description: confirm the geographic focus (Bretagne? France?)
+    ================================================ -->
+    <meta name="description" content="Camille Choquel is a freelance digital marketing consultant based in France. Social media, email campaigns, branding and content creation for entrepreneurs and SMEs. Working with clients across France and internationally since 2021." />
+    <title>Camille Choquel | Freelance Digital Marketing Consultant — France</title>
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://choquel-marketing.com" />
-    <meta property="og:title" content="Choquel Marketing" />
-    <meta property="og:description" content="Choquel Marketing is a Digital Marketing Company based in France, created by Camille Choquel. We are specialized in global digital marketing strategy & brand awareness." />
+    <meta property="og:url" content="https://choquel-marketing.com/" />
+    <meta property="og:title" content="Camille Choquel | Freelance Digital Marketing Consultant" />
+    <meta property="og:description" content="Freelance digital marketing consultant based in France. Social media, email campaigns, branding and content creation for entrepreneurs and SMEs." />
     <meta property="og:image" content="https://choquel-marketing.com/resources/img/social.png" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
@@ -26,31 +28,34 @@
 
     <!-- Twitter Card -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://choquel-marketing.com" />
-    <meta property="twitter:title" content="Choquel Marketing" />
-    <meta property="twitter:description" content="Choquel Marketing is a Digital Marketing Company based in France, created by Camille Choquel. We are specialized in global digital marketing strategy & brand awareness." />
+    <meta property="twitter:url" content="https://choquel-marketing.com/" />
+    <meta property="twitter:title" content="Camille Choquel | Freelance Digital Marketing Consultant" />
+    <meta property="twitter:description" content="Freelance digital marketing consultant based in France. Social media, email campaigns, branding and content creation for entrepreneurs and SMEs." />
     <meta property="twitter:image" content="https://choquel-marketing.com/resources/img/social.png" />
 
-    <!-- Language alternates -->
+    <!-- Canonical & language alternates -->
+    <link rel="canonical" href="https://choquel-marketing.com/" />
     <link rel="alternate" hreflang="en" href="https://choquel-marketing.com/" />
-    <link rel="alternate" hreflang="fr" href="https://choquel-marketing.com/fr.html" />
+    <link rel="alternate" hreflang="fr" href="https://choquel-marketing.com/fr" />
+    <link rel="alternate" hreflang="x-default" href="https://choquel-marketing.com/" />
 
     <!-- Favicons -->
     <link rel="shortcut icon" type="image/x-icon" href="resources/img/favicon.ico" />
     <link rel="icon" type="image/x-icon" href="resources/img/favicon.ico" />
     <link rel="icon" type="image/png" href="resources/img/favicon.png" />
 
-    <!-- Fonts -->
+    <!-- Hero image preload (improves LCP) -->
+    <link rel="preload" as="image" href="resources/img/HeroBanner.jpg" />
+
+    <!-- Fonts: Alexandria added, Raleway gets weight 700 for mobile headings -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Raleway:wght@300&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300&family=Open+Sans:wght@300;400&family=Raleway:wght@300;700&display=swap" rel="stylesheet" />
 
     <!-- Stylesheets: reset → custom → framework -->
     <link rel="stylesheet" type="text/css" href="./resources/css/reset.css" />
     <link rel="stylesheet" type="text/css" href="./resources/css/style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" crossorigin="anonymous" />
-
-    <title>Choquel Marketing</title>
 
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QXV2YY9CGF"></script>
@@ -59,6 +64,80 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-QXV2YY9CGF');
+    </script>
+
+    <!-- Schema markup: Person + ProfessionalService -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://choquel-marketing.com/#camille",
+          "name": "Camille Choquel",
+          "jobTitle": "Freelance Digital Marketing Consultant",
+          "url": "https://choquel-marketing.com/",
+          "email": "choquelmarketing@gmail.com",
+          "sameAs": [
+            "https://www.linkedin.com/in/camille-choquel-digitalmarketer/",
+            "https://twitter.com/ChoquelMarketg",
+            "https://www.instagram.com/choquelmarketing/"
+          ],
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Choquel Marketing"
+          }
+        },
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://choquel-marketing.com/#service",
+          "name": "Choquel Marketing",
+          "url": "https://choquel-marketing.com/",
+          "description": "Freelance digital marketing services including social media management, email marketing, branding, content creation, digital advertising and SEO copywriting.",
+          "founder": { "@id": "https://choquel-marketing.com/#camille" },
+          "areaServed": ["FR", "Worldwide"],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Digital Marketing Services",
+            "itemListElement": [
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Digital Marketing Strategy" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Social Media Management" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Email Marketing" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Branding & Visual Identity" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Content Creation" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Digital Advertising" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "SEO Copywriting" } }
+            ]
+          },
+          "review": [
+            {
+              "@type": "Review",
+              "author": { "@type": "Person", "name": "Lucas Dudicourt" },
+              "reviewBody": "Camille is not only competent but also very attentive & always available to train and learn new things to improve her work. I will continue to work with her for the long term with great pleasure!",
+              "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+            },
+            {
+              "@type": "Review",
+              "author": { "@type": "Person", "name": "Stéphane Maarek" },
+              "reviewBody": "Camille did a great job of migrating my mailing list and setup from MailChimp to SendInBlue. Easy communication, thanks a lot!",
+              "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+            },
+            {
+              "@type": "Review",
+              "author": { "@type": "Person", "name": "Anne-Laure Bartenay" },
+              "reviewBody": "She is creative, responsive, and highly adaptable, always meeting deadlines and project requirements with precision. Working with her was a true pleasure!",
+              "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+            }
+          ],
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "reviewCount": "9",
+            "bestRating": "5"
+          }
+        }
+      ]
+    }
     </script>
   </head>
   <body>
@@ -87,6 +166,9 @@
           <li class="nav-item m-auto"><a class="nav-link" href="#testimonies_section">TESTIMONIES</a></li>
           <li class="nav-item m-auto"><a class="nav-link" href="#contact_section">CONTACT</a></li>
           <li class="nav-item m-auto">
+            <a class="nav-link navbar-cta" href="#contact_section">HIRE ME</a>
+          </li>
+          <li class="nav-item m-auto">
             <a class="nav-link" href="/fr">
               <img class="language" src="https://cdn-icons-png.flaticon.com/512/197/197560.png" alt="Version française" />
             </a>
@@ -102,34 +184,122 @@
       <a class="anchor" id="top"></a>
       <div class="hero">
         <div class="content text-center">
+          <!-- ================================================
+          DRAFT tagline — review with Camille:
+          Option A (current): "Increase your audience, improve your image"
+          Option B (proposed): "Your dedicated marketing expert — from strategy to execution."
+          Option C: "One person. Full digital marketing. Personal attention."
+          ================================================ -->
           <h1>Choquel Marketing</h1>
-          <p>Increase your audience, improve your image</p>
+          <p>Your dedicated marketing expert — from strategy to execution.</p>
+          <a href="https://calendly.com/choquelmarketing/30min" target="_blank" class="button-primary mt-2">Book a free 30-min call</a>
         </div>
       </div>
 
       <!-- ABOUT -->
       <a class="anchor" id="about_section"></a>
       <div class="about">
-        <div class="content">
-          <div class="text-container">
-            <h2>About us</h2>
-            <p class="headline">Digital Marketing company specialized in strategy and brand awareness.</p>
-            <p>
-              Established in France and working with several clients since 2021,
-              our aim is to help businesses and professionals to achieve their
-              marketing goals. By guiding them in their strategy, improving
-              their image and increasing their digital presence, we make sure
-              that they reach their objectives.
-            </p>
+        <div class="container">
+          <div class="about-inner">
+            <div class="about-photo-col">
+              <img class="profilpic" src="resources/img/Profil Picture.jpeg" alt="Camille Choquel, Digital Marketing Consultant" />
+              <div class="about-caption">
+                <h3>Camille Choquel</h3>
+                <em>Digital Marketing Consultant</em>
+              </div>
+            </div>
+            <div class="text-container">
+              <h2>About us</h2>
+              <p class="headline">Digital Marketing company specialized in strategy and brand awareness.</p>
+              <p>
+                Established in France and working with several clients since 2021,
+                our aim is to help businesses and professionals to achieve their
+                marketing goals. By guiding them in their strategy, improving
+                their image and increasing their digital presence, we make sure
+                that they reach their objectives.
+              </p>
+            </div>
           </div>
         </div>
-        <figure>
-          <img class="profilpic" src="resources/img/Profil Picture.jpeg" alt="Camille Choquel, Digital Marketing Specialist" />
-          <figcaption>
-            <h3>Camille Choquel</h3>
-            <em>Digital Marketing Specialist</em>
-          </figcaption>
-        </figure>
+      </div>
+
+      <!-- TESTIMONIES -->
+      <a class="anchor" id="testimonies_section"></a>
+      <div class="featured-testimonies">
+        <h2>Testimonies</h2>
+        <div class="container">
+          <div class="testimonies-carousel">
+            <button class="testimonies-btn testimonies-prev" aria-label="Previous" disabled>&#8249;</button>
+            <div class="testimonies-viewport">
+              <div class="testimonies-track" id="testimoniesTrack">
+                <div class="testimonies-item">
+                  <div class="quote-card">
+                    <p>"Camille is not only competent but also very attentive & always available to train and learn new things. She has a constructive view of my business. I will continue to work with her for the long term with great pleasure!"</p>
+                    <div class="quote-author">Lucas Dudicourt</div>
+                    <div class="quote-role">Founder, Fastcontact</div>
+                  </div>
+                </div>
+                <div class="testimonies-item">
+                  <div class="quote-card">
+                    <p>"Camille did a great job of migrating my mailing list from MailChimp to SendInBlue. She seamlessly recreated the templates I use for my business. Easy communication, thanks a lot!"</p>
+                    <div class="quote-author">Stéphane Maarek</div>
+                    <div class="quote-role">Udemy Instructor, 9x AWS Certified, Kafka Expert</div>
+                  </div>
+                </div>
+                <div class="testimonies-item">
+                  <div class="quote-card">
+                    <p>"She is creative, responsive, and highly adaptable, always meeting deadlines and project requirements with precision. Working with her was a true pleasure!"</p>
+                    <div class="quote-author">Anne-Laure Bartenay</div>
+                    <div class="quote-role">Sponsorship Manager, Canopy Fest</div>
+                  </div>
+                </div>
+                <div class="testimonies-item">
+                  <div class="quote-card">
+                    <p>"I recommend Mrs Camille CHOQUEL for her rigour and her ability to organize her work as well as that of her colleagues, leaving the team more autonomous."</p>
+                    <div class="quote-author">Antoine Bancel</div>
+                    <div class="quote-role">General Manager, Bodia</div>
+                  </div>
+                </div>
+                <div class="testimonies-item">
+                  <div class="quote-card">
+                    <p>"Camille is a pleasure to work with. She has excellent project management skills and knows how to keep her team and her clients happy."</p>
+                    <div class="quote-author">Nancy Jaffe</div>
+                    <div class="quote-role">Chief Strategy Officer, Mango Tango Asia</div>
+                  </div>
+                </div>
+                <div class="testimonies-item">
+                  <div class="quote-card">
+                    <p>"Camille is a good communicator and a hard worker. She is always up for new challenges and has shown a keenness to learn new skills. She works well in a team."</p>
+                    <div class="quote-author">Shivam Thripathi</div>
+                    <div class="quote-role">CEO & Co-Founder, Camboticket</div>
+                  </div>
+                </div>
+                <div class="testimonies-item">
+                  <div class="quote-card">
+                    <p>"Camille is one of the best people I had the chance to work with. I highly recommend her expertise to any company looking for a digital marketing manager. Always with patience, understanding and a warm smile."</p>
+                    <div class="quote-author">Thomas Charneau</div>
+                    <div class="quote-role">Marketing & Communication Manager, Bodia</div>
+                  </div>
+                </div>
+                <div class="testimonies-item">
+                  <div class="quote-card">
+                    <p>"Camille is reliable, dedicated, and shows great ownership in her work. Always easy to reach, responsive, and cheerful — I highly recommend her for any social media-related mission."</p>
+                    <div class="quote-author">Thibault Genon-Catalot</div>
+                    <div class="quote-role">Marketing Consultant</div>
+                  </div>
+                </div>
+                <div class="testimonies-item">
+                  <div class="quote-card">
+                    <p>"I highly recommend Camille for her outstanding services. She is attentive, responsive, and always available. She has an excellent understanding of the key aspects of a project."</p>
+                    <div class="quote-author">Océane Decroze</div>
+                    <div class="quote-role">Artist & Muralist</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="testimonies-btn testimonies-next" aria-label="Next">&#8250;</button>
+          </div>
+        </div>
       </div>
 
       <!-- SERVICES -->
@@ -140,7 +310,7 @@
           <div class="box">
             <div class="flipCard">
               <div class="imgContainer">
-                <img src="./resources/img/services/EN/Bloc 1 EN.jpg" alt="Digital Marketing Strategy" />
+                <img src="./resources/img/services/EN/Bloc 1 EN.jpg" alt="Digital Marketing Strategy" loading="lazy" />
               </div>
               <div class="content d-flex flex-column align-items-center justify-content-center">
                 <div><p class="fs-6 text-white">A strategy covering all aspects of digital marketing to gain visibility and performance.</p></div>
@@ -150,7 +320,7 @@
           <div class="box">
             <div class="flipCard">
               <div class="imgContainer">
-                <img src="./resources/img/services/EN/Bloc 2 EN.jpg" alt="Social Media Management" />
+                <img src="./resources/img/services/EN/Bloc 2 EN.jpg" alt="Social Media Management" loading="lazy" />
               </div>
               <div class="content d-flex flex-column align-items-center justify-content-center">
                 <div><p class="fs-6 text-white">Enhance your visibility and engage with potential prospects by creating captivating and high-quality content on your social networks.</p></div>
@@ -160,7 +330,7 @@
           <div class="box">
             <div class="flipCard">
               <div class="imgContainer">
-                <img src="./resources/img/services/EN/Bloc 3 EN.jpg" alt="Website Redesign" />
+                <img src="./resources/img/services/EN/Bloc 3 EN.jpg" alt="Website Redesign" loading="lazy" />
               </div>
               <div class="content d-flex flex-column align-items-center justify-content-center">
                 <div><p class="fs-6 text-white">Increase website's visits and optimize visitors' experience thanks to our website redesign recommendations.</p></div>
@@ -170,7 +340,7 @@
           <div class="box">
             <div class="flipCard">
               <div class="imgContainer">
-                <img src="./resources/img/services/EN/Bloc 4 EN.jpg" alt="Branding" />
+                <img src="./resources/img/services/EN/Bloc 4 EN.jpg" alt="Branding" loading="lazy" />
               </div>
               <div class="content d-flex flex-column align-items-center justify-content-center">
                 <div><p class="fs-6 text-white">Redefine and revitalize your brand image to align with your core values and make it stand out in the digital landscape.</p></div>
@@ -180,7 +350,7 @@
           <div class="box">
             <div class="flipCard">
               <div class="imgContainer">
-                <img src="./resources/img/services/EN/Bloc 5 EN.jpg" alt="Content Creation" />
+                <img src="./resources/img/services/EN/Bloc 5 EN.jpg" alt="Content Creation" loading="lazy" />
               </div>
               <div class="content d-flex flex-column align-items-center justify-content-center">
                 <div><p class="fs-6 text-white">Tailor-made, high-quality content designed to meet your specific requirements across all your online and offline communication channels.</p></div>
@@ -190,7 +360,7 @@
           <div class="box">
             <div class="flipCard">
               <div class="imgContainer">
-                <img src="./resources/img/services/EN/Bloc 6 EN.jpg" alt="Email Marketing" />
+                <img src="./resources/img/services/EN/Bloc 6 EN.jpg" alt="Email Marketing" loading="lazy" />
               </div>
               <div class="content d-flex flex-column align-items-center justify-content-center">
                 <div><p class="fs-6 text-white">Engage your customers and prospects by sharing compelling content and news to sell more and cultivate lasting loyalty.</p></div>
@@ -200,7 +370,7 @@
           <div class="box">
             <div class="flipCard">
               <div class="imgContainer">
-                <img src="./resources/img/services/EN/Bloc 7 EN.jpg" alt="Digital Advertising" />
+                <img src="./resources/img/services/EN/Bloc 7 EN.jpg" alt="Digital Advertising" loading="lazy" />
               </div>
               <div class="content d-flex flex-column align-items-center justify-content-center">
                 <div><p class="fs-6 text-white">Develop your online visibility to attract new potential prospects. Communicate about your brand and differentiate yourself from the competitors.</p></div>
@@ -210,7 +380,7 @@
           <div class="box">
             <div class="flipCard">
               <div class="imgContainer">
-                <img src="./resources/img/services/EN/Bloc 8 EN.jpg" alt="Copywriting & SEO" />
+                <img src="./resources/img/services/EN/Bloc 8 EN.jpg" alt="Copywriting & SEO" loading="lazy" />
               </div>
               <div class="content d-flex flex-column align-items-center justify-content-center">
                 <div><p class="fs-6 text-white">Get SEO-optimized text content for your website, products descriptions, white papers and blog posts to ensure maximum visibility.</p></div>
@@ -220,7 +390,7 @@
           <div class="box">
             <div class="flipCard">
               <div class="imgContainer">
-                <img src="./resources/img/services/EN/Bloc 9 EN.jpg" alt="Custom Strategy" />
+                <img src="./resources/img/services/EN/Bloc 9 EN.jpg" alt="Custom Strategy" loading="lazy" />
               </div>
               <div class="content d-flex flex-column align-items-center justify-content-center">
                 <div><p class="fs-6 text-white">We offer a personalized service for clients who need a tailor-made strategy. Contact us today to learn more and get started.</p></div>
@@ -232,14 +402,14 @@
 
       <!-- PORTFOLIO -->
       <a class="anchor" id="portfolio_section"></a>
-      <div class="portfolio mt-4">
+      <div class="portfolio">
         <h2>Portfolio</h2>
         <div class="container">
           <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 m-3">
 
             <!-- OCEANE DECROZE -->
             <div class="col card text-black p-0 rounded-0 border-0">
-              <img class="card-img rounded-0" src="./resources/img/portfolio/Decroze.jpg" alt="Océane Decroze" />
+              <img class="card-img rounded-0" src="./resources/img/portfolio/Decroze.jpg" alt="Océane Decroze" loading="lazy" />
               <div class="card-img-overlay rounded-0 d-flex flex-column justify-content-center align-items-center">
                 <div class="text rounded-0 text-center">
                   <h3 class="card-title m-3">Océane Decroze</h3>
@@ -269,7 +439,7 @@
 
             <!-- THIBAULT GENON-CATALOT -->
             <div class="col card text-black p-0 rounded-0 border-0">
-              <img class="card-img rounded-0" src="./resources/img/portfolio/Genon.jpg" alt="Thibault Genon-Catalot" />
+              <img class="card-img rounded-0" src="./resources/img/portfolio/Genon.jpg" alt="Thibault Genon-Catalot" loading="lazy" />
               <div class="card-img-overlay rounded-0 d-flex flex-column justify-content-center align-items-center">
                 <div class="text rounded-0 text-center">
                   <h3 class="card-title m-3">Thibault Genon-Catalot</h3>
@@ -299,7 +469,7 @@
 
             <!-- CANOPY FEST -->
             <div class="col card text-black p-0 rounded-0 border-0">
-              <img class="card-img rounded-0" src="./resources/img/portfolio/CanopyFest.jpg" alt="Canopy Fest" />
+              <img class="card-img rounded-0" src="./resources/img/portfolio/CanopyFest.jpg" alt="Canopy Fest" loading="lazy" />
               <div class="card-img-overlay rounded-0 d-flex flex-column justify-content-center align-items-center">
                 <div class="text rounded-0 text-center">
                   <h3 class="card-title m-3">Canopy Fest</h3>
@@ -311,9 +481,9 @@
                           <h3 class="modal-title" id="CanopyModalTitle">Canopy Fest</h3>
                         </div>
                         <div class="modal-body">
-                          <em>The first edition of a vibrant two days festival in Phnom Penh, Cambodia, filled with activities, family-friendly entertainment, concerts, cultural showcases, and an outdoor artisan market!</em>
+                          <em>The first edition of a vibrant two-day festival in Phnom Penh, Cambodia — activities, family entertainment, concerts, cultural showcases and an outdoor artisan market.</em>
                           <h4>Project</h4>
-                          <p>Creative branding (logo, identity), social media, event organization & Sponsorship pitches.</p>
+                          <p>Creative branding (logo & identity), social media management, event organisation & sponsorship pitches.</p>
                           <br />
                           <a href="https://web.facebook.com/profile.php?id=61567848184781" target="_blank" class="button">Facebook Page</a>
                           <a href="https://web.facebook.com/share/v/16PaJzHubg/" target="_blank" class="button">Official Recap Video</a>
@@ -330,7 +500,7 @@
 
             <!-- TRAVELROLL -->
             <div class="col card text-black p-0 rounded-0 border-0">
-              <img class="card-img rounded-0" src="./resources/img/portfolio/TravelRoll.jpg" alt="TravelRoll" />
+              <img class="card-img rounded-0" src="./resources/img/portfolio/TravelRoll.jpg" alt="TravelRoll" loading="lazy" />
               <div class="card-img-overlay rounded-0 d-flex flex-column justify-content-center align-items-center">
                 <div class="text rounded-0 text-center">
                   <h3 class="card-title m-3">TravelRoll</h3>
@@ -342,9 +512,9 @@
                           <h3 class="modal-title" id="TravelRollModalTitle">TravelRoll</h3>
                         </div>
                         <div class="modal-body">
-                          <em>Artist specialized in illustrated travel rolls about Cambodia and Southeast Asia</em>
+                          <em>Artist specialised in illustrated travel rolls about Cambodia and Southeast Asia.</em>
                           <h4>Project</h4>
-                          <p>Email marketing campaigns design and tracking. Website SEO optimization.</p>
+                          <p>Email marketing campaigns — design, copywriting and performance tracking. SEO optimisation of the artist's website.</p>
                           <br />
                           <a href="https://0lzxy.mjt.lu/nl3/VrlAA-TJ5hOWitU9uHckfA?hl=fr" target="_blank" class="button">Newsletter</a>
                         </div>
@@ -360,36 +530,17 @@
 
             <!-- FASTCONTACT -->
             <div class="col card text-black p-0 rounded-0 border-0">
-              <img class="card-img rounded-0" src="./resources/img/portfolio/FastContact.jpg" alt="Fastcontact" />
+              <img class="card-img rounded-0" src="./resources/img/portfolio/FastContact.jpg" alt="Fastcontact" loading="lazy" />
               <div class="card-img-overlay rounded-0 d-flex flex-column justify-content-center align-items-center">
                 <div class="text rounded-0 text-center">
                   <h3 class="card-title m-3">Fastcontact</h3>
-                  <div class="modal fade" id="FastContactModal" tabindex="-1" role="dialog" aria-labelledby="FastContactModalTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header d-flex justify-content-center">
-                          <h3 class="modal-title" id="FastContactModalTitle">Fastcontact</h3>
-                        </div>
-                        <div class="modal-body">
-                          <em>Company specialized in e-mailing for E-commerce brands</em>
-                          <h4>Project</h4>
-                          <p>Planning, conceptualization, and execution of email campaigns with result tracking. Generation and optimization of automated workflows.</p>
-                          <br />
-                          <a href="https://acrobat.adobe.com/id/urn:aaid:sc:eu:5dc79f9a-b57a-409a-980a-9ced5867b55b?viewer%21megaVerb=group-discover" target="_blank" class="button">Newsletter</a>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary button" data-bs-dismiss="modal">Close</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
 
             <!-- MANGO TANGO ASIA -->
             <div class="col card text-black p-0 rounded-0 border-0">
-              <img class="card-img rounded-0" src="./resources/img/portfolio/MangoTango.jpg" alt="Mango Tango Asia" />
+              <img class="card-img rounded-0" src="./resources/img/portfolio/MangoTango.jpg" alt="Mango Tango Asia" loading="lazy" />
               <div class="card-img-overlay rounded-0 d-flex flex-column justify-content-center align-items-center">
                 <div class="text rounded-0 text-center">
                   <h3 class="card-title m-3">Mango Tango Asia</h3>
@@ -401,9 +552,9 @@
                           <h3 class="modal-title" id="MangoTangoModalTitle">Mango Tango Asia</h3>
                         </div>
                         <div class="modal-body">
-                          <em>An advertising and creative communication agency based in Phnom Penh</em>
+                          <em>An advertising and creative communication agency based in Phnom Penh.</em>
                           <h4>Project</h4>
-                          <p>Manage social media platforms and showcase the agency, its work, teams, and core values through engaging communication strategies.</p>
+                          <p>Social media management — content creation, community management and brand communication strategy for the agency's own platforms.</p>
                           <br />
                           <a href="https://www.facebook.com/watch/?v=632209480900355" target="_blank" class="button">Video</a>
                         </div>
@@ -419,7 +570,7 @@
 
             <!-- CAMBOTICKET -->
             <div class="col card text-black p-0 rounded-0 border-0">
-              <img class="card-img rounded-0" src="./resources/img/portfolio/Camboticket.jpg" alt="Camboticket" />
+              <img class="card-img rounded-0" src="./resources/img/portfolio/Camboticket.jpg" alt="Camboticket" loading="lazy" />
               <div class="card-img-overlay rounded-0 d-flex flex-column justify-content-center align-items-center">
                 <div class="text rounded-0 text-center">
                   <h3 class="card-title m-3">Camboticket</h3>
@@ -431,9 +582,9 @@
                           <h3 class="modal-title" id="CamboticketModalTitle">Camboticket</h3>
                         </div>
                         <div class="modal-body">
-                          <em>Online platform to book buses, taxis, ferries and activities throughout Cambodia and neighboring countries</em>
+                          <em>Online platform to book buses, taxis, ferries and activities throughout Cambodia and neighbouring countries.</em>
                           <h4>Project</h4>
-                          <p>Manage both online and offline communication channels to improve the digital presence of the platform.</p>
+                          <p>Online and offline communication management to strengthen the platform's digital presence and brand awareness.</p>
                           <br />
                           <a href="https://www.camboticket.com/" target="_blank" class="button">Website</a>
                         </div>
@@ -449,7 +600,7 @@
 
             <!-- SAVEURS DU MÉKONG -->
             <div class="col card text-black p-0 rounded-0 border-0">
-              <img class="card-img rounded-0" src="./resources/img/portfolio/SaveurMekong.jpg" alt="Saveurs du Mékong" />
+              <img class="card-img rounded-0" src="./resources/img/portfolio/SaveurMekong.jpg" alt="Saveurs du Mékong" loading="lazy" />
               <div class="card-img-overlay rounded-0 d-flex flex-column justify-content-center align-items-center">
                 <div class="text rounded-0 text-center">
                   <h3 class="card-title m-3">Saveurs du Mékong</h3>
@@ -461,10 +612,13 @@
                           <h3 class="modal-title" id="SaveurMekongModalTitle">Saveurs du Mékong</h3>
                         </div>
                         <div class="modal-body">
-                          <em>Organic fruit juice brand based in Cambodia</em>
+                          <em>Organic fruit juice brand based in Cambodia.</em>
                           <h4>Project</h4>
-                          <p>Design a flyer to be placed on the tables of luxury partners Hotels in order to communicate about the brand's organic fruit juices range.</p>
-                          <br />
+                          <p>Design and production of a printed flyer for placement in luxury partner hotels — communicating the brand's organic juice range to an upscale audience.</p>
+                          <!-- ================================================
+                          DRAFT — add a result if available, e.g.:
+                          "The flyer was distributed across 12 partner hotels."
+                          ================================================ -->
                         </div>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary button" data-bs-dismiss="modal">Close</button>
@@ -478,7 +632,7 @@
 
             <!-- CLS IMMO -->
             <div class="col card text-black p-0 rounded-0 border-0">
-              <img class="card-img rounded-0" src="./resources/img/portfolio/CLS.jpg" alt="CLS Immo" />
+              <img class="card-img rounded-0" src="./resources/img/portfolio/CLS.jpg" alt="CLS Immo" loading="lazy" />
               <div class="card-img-overlay rounded-0 d-flex flex-column justify-content-center align-items-center">
                 <div class="text rounded-0 text-center">
                   <h3 class="card-title m-3">CLS Immo</h3>
@@ -490,10 +644,13 @@
                           <h3 class="modal-title" id="CLSImmoModalTitle">CLS Immo</h3>
                         </div>
                         <div class="modal-body">
-                          <em>A real estate agency based in France</em>
+                          <em>A real estate agency based in France, looking to grow their visibility and attract potential sellers.</em>
                           <h4>Project</h4>
-                          <p>Design creation, Facebook Meta ads, and result tracking to boost brand notoriety and attract potential sellers.</p>
-                          <br />
+                          <p>Design creation and Facebook Meta Ads campaigns with performance tracking to build brand awareness and generate seller leads.</p>
+                          <!-- ================================================
+                          DRAFT — add a result if available, e.g.:
+                          "Generated X leads in the first month."
+                          ================================================ -->
                         </div>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary button" data-bs-dismiss="modal">Close</button>
@@ -507,7 +664,7 @@
 
             <!-- DATACUMULUS -->
             <div class="col card text-black p-0 rounded-0 border-0">
-              <img class="card-img rounded-0" src="./resources/img/portfolio/Datacumulus.jpg" alt="Datacumulus Oü" />
+              <img class="card-img rounded-0" src="./resources/img/portfolio/Datacumulus.jpg" alt="Datacumulus Oü" loading="lazy" />
               <div class="card-img-overlay rounded-0 d-flex flex-column justify-content-center align-items-center">
                 <div class="text rounded-0 text-center">
                   <h3 class="card-title m-3">Datacumulus Oü</h3>
@@ -519,10 +676,9 @@
                           <h3 class="modal-title" id="DatacumulusModalTitle">Datacumulus Oü</h3>
                         </div>
                         <div class="modal-body">
-                          <em>Stephane Maarek is a Udemy, AWS and Kafka Expert trainer followed by more than 1.5M online students</em>
+                          <em>Stéphane Maarek — Udemy instructor and AWS/Kafka expert, followed by over 1.5M students worldwide.</em>
                           <h4>Project</h4>
-                          <p>Migrate the contact lists from the Mailchimp to the Brevo platform (formerly SendinBlue); setup automated flows and import existing email templates.</p>
-                          <br />
+                          <p>Full migration of contact lists from Mailchimp to Brevo (formerly SendinBlue), including automated flow setup and email template recreation.</p>
                         </div>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary button" data-bs-dismiss="modal">Close</button>
@@ -536,7 +692,7 @@
 
             <!-- COMMISSION ETHIQUE EQUINE -->
             <div class="col card text-black p-0 rounded-0 border-0">
-              <img class="card-img rounded-0" src="./resources/img/portfolio/CommissionEthiqueEquine.png" alt="Commission Éthique Équine de Bretagne" />
+              <img class="card-img rounded-0" src="./resources/img/portfolio/CommissionEthiqueEquine.png" alt="Commission Éthique Équine de Bretagne" loading="lazy" />
               <div class="card-img-overlay rounded-0 d-flex flex-column justify-content-center align-items-center">
                 <div class="text rounded-0 text-center">
                   <h3 class="card-title m-3">Éthique Équine Bretagne</h3>
@@ -567,7 +723,7 @@
 
             <!-- CATS IN NEED -->
             <div class="col card text-black p-0 rounded-0 border-0">
-              <img class="card-img rounded-0" src="./resources/img/portfolio/CatsInNeed.jpg" alt="Cats in Need" />
+              <img class="card-img rounded-0" src="./resources/img/portfolio/CatsInNeed.jpg" alt="Cats in Need" loading="lazy" />
               <div class="card-img-overlay rounded-0 d-flex flex-column justify-content-center align-items-center">
                 <div class="text rounded-0 text-center">
                   <h3 class="card-title m-3">Cats in Need</h3>
@@ -581,7 +737,7 @@
                         <div class="modal-body">
                           <em>Cats in Need is a charity dedicated to helping stray cats in Phnom Penh survive, thrive, and find loving homes.</em>
                           <h4>Project</h4>
-                          <p>Creative branding (logo, identity), social media, event organization.</p>
+                          <p>Creative branding (logo & visual identity), social media management, event organisation.</p>
                           <br />
                           <a href="https://www.instagram.com/catsinneedpp/" target="_blank" class="button">Instagram Page</a>
                           <a href="https://web.facebook.com/profile.php?id=61560444118502" target="_blank" class="button">Facebook Page</a>
@@ -600,9 +756,8 @@
         </div>
       </div>
 
-      <!-- TESTIMONIES -->
-      <a class="anchor" id="testimonies_section"></a>
-      <div class="testimonies mt-5">
+      <!-- TESTIMONIES CAROUSEL (removed — replaced by horizontal scroll above) -->
+      <div class="d-none">
         <h2>Testimonies</h2>
         <div id="carouselExampleIndicators" class="carousel slide mt-3 mb-5" data-bs-theme="dark">
           <div class="carousel-indicators">
@@ -697,38 +852,55 @@
       <div class="contact mb-5">
         <h2>Contact</h2>
         <div class="container d-flex flex-column justify-content-center align-content-center">
-          <h3>Want to get in touch?</h3>
-          <h4 class="text-center">Contact us to discuss your needs and your goals, or to request a quote. Choose one of the options below to reach us:</h4>
+          <h3>Ready to grow your digital presence?</h3>
+          <!-- Primary CTA: Calendly -->
+          <div class="text-center mb-4">
+            <a href="https://calendly.com/choquelmarketing/30min" target="_blank" class="contact-cta">
+              Book a free 30-minute call
+              <small>No commitment — just a conversation about your goals</small>
+            </a>
+          </div>
+          <h4 class="text-center">Or reach out directly:</h4>
           <div class="container justify-content-center">
-            <div class="row row-cols-3 row-cols-lg-6 m-auto">
+            <div class="row row-cols-3 row-cols-lg-5 m-auto">
               <div class="col">
                 <a href="https://www.linkedin.com/in/camille-choquel-digitalmarketer/" target="_blank">
-                  <img class="img-fluid" src="resources/img/contact/linkedIn.png" alt="LinkedIn" />
-                </a>
-              </div>
-              <div class="col">
-                <a href="https://calendly.com/choquelmarketing/30min" target="_blank">
-                  <img class="img-fluid" src="resources/img/contact/calendly.png" alt="Calendly" />
+                  <div class="contact-icon-wrap">
+                    <img class="img-fluid" src="resources/img/contact/linkedIn.png" alt="LinkedIn" loading="lazy" />
+                    <span>LinkedIn</span>
+                  </div>
                 </a>
               </div>
               <div class="col">
                 <a href="mailto:choquelmarketing@gmail.com">
-                  <img class="img-fluid" src="resources/img/contact/email.png" alt="Email" />
+                  <div class="contact-icon-wrap">
+                    <img class="img-fluid" src="resources/img/contact/email.png" alt="Email" loading="lazy" />
+                    <span>Email</span>
+                  </div>
                 </a>
               </div>
               <div class="col">
                 <a href="https://wa.me/+85585882947" target="_blank">
-                  <img class="img-fluid" src="resources/img/contact/whatsapp.png" alt="WhatsApp" />
+                  <div class="contact-icon-wrap">
+                    <img class="img-fluid" src="resources/img/contact/whatsapp.png" alt="WhatsApp" loading="lazy" />
+                    <span>WhatsApp</span>
+                  </div>
                 </a>
               </div>
               <div class="col">
                 <a href="https://t.me/Camille_cc" target="_blank">
-                  <img class="img-fluid" src="resources/img/contact/telegram.png" alt="Telegram" />
+                  <div class="contact-icon-wrap">
+                    <img class="img-fluid" src="resources/img/contact/telegram.png" alt="Telegram" loading="lazy" />
+                    <span>Telegram</span>
+                  </div>
                 </a>
               </div>
               <div class="col">
                 <a href="https://twitter.com/ChoquelMarketg" target="_blank">
-                  <img class="img-fluid" src="resources/img/contact/twitter.png" alt="Twitter / X" />
+                  <div class="contact-icon-wrap">
+                    <img class="img-fluid" src="resources/img/contact/twitter.png" alt="Twitter / X" loading="lazy" />
+                    <span>Twitter / X</span>
+                  </div>
                 </a>
               </div>
             </div>
@@ -737,11 +909,48 @@
       </div>
 
       <div class="copyright">
-        <p>Copyright © 2025 Choquel Marketing | All Rights Reserved.</p>
+        <p>Copyright © 2026 Choquel Marketing | All Rights Reserved.</p>
       </div>
 
     </div><!-- /.main -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+    <!-- Mobile tap-to-flip for service cards -->
+    <script>
+      document.querySelectorAll('.services .box').forEach(function(box) {
+        box.addEventListener('click', function() {
+          this.classList.toggle('flipped');
+        });
+      });
+    </script>
+
+    <!-- Testimonies: 3 visible, 1-card step -->
+    <script>
+      (function () {
+        var track = document.getElementById('testimoniesTrack');
+        if (!track) return;
+        var items = track.querySelectorAll('.testimonies-item');
+        var total = items.length;
+        var current = 0;
+        var prevBtn = document.querySelector('.testimonies-prev');
+        var nextBtn = document.querySelector('.testimonies-next');
+
+        function visibleCount() { return window.innerWidth >= 768 ? 3 : 1; }
+        function maxCurrent() { return Math.max(0, total - visibleCount()); }
+
+        function update() {
+          track.style.transform = 'translateX(' + (-current * items[0].offsetWidth) + 'px)';
+          prevBtn.disabled = current === 0;
+          nextBtn.disabled = current >= maxCurrent();
+        }
+
+        prevBtn.addEventListener('click', function () { if (current > 0) { current--; update(); } });
+        nextBtn.addEventListener('click', function () { if (current < maxCurrent()) { current++; update(); } });
+        window.addEventListener('resize', function () { if (current > maxCurrent()) current = maxCurrent(); update(); });
+
+        update();
+      })();
+    </script>
   </body>
 </html>
